@@ -13,6 +13,7 @@ const SettingsOptions: React.FC = () => {
         borderRadius="none"
         maxWidth="124px"
         height="48px"
+        border={`4px solid ${theme.colors.secondary}`}
         sx={theme.buttons.secondarySmall}
       >
         tutors.fi
@@ -21,6 +22,7 @@ const SettingsOptions: React.FC = () => {
         borderRadius="none"
         height="48px"
         maxWidth="168px"
+        border={`4px solid ${theme.colors.secondary}`}
         sx={theme.buttons.secondarySmall}
       >
         shockey.com
@@ -29,6 +31,7 @@ const SettingsOptions: React.FC = () => {
         borderRadius="none"
         height="48px"
         maxWidth="124px"
+        border={`4px solid ${theme.colors.secondary}`}
         sx={theme.buttons.secondarySmall}
       >
         custom
