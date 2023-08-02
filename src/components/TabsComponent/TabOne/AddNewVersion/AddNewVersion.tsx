@@ -59,21 +59,31 @@ const AddNewVersion = () => {
               cursor="pointer"
               mt="18px"
               display="flex"
-              gap="9px"
+              justifyContent="space-around"
               fontSize="18px"
               maxWidth="214px"
               sx={theme.buttons.primarySmall}
             >
               <div>
                 <svg
-                  width="20px"
-                  height="20px"
+                  width="16"
+                  height="16"
                   viewBox="0 0 16 16"
                   fill="#FEFEFE"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M8 2L8 14" stroke="#FEFEFE" />
-                  <path d="M2 8L14 8" stroke="#FEFEFE" />
+                  <path
+                    d="M8 2L8 14"
+                    stroke="#FEFEFE"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M2 8L14 8"
+                    stroke="#FEFEFE"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
                 </svg>
               </div>
               New version

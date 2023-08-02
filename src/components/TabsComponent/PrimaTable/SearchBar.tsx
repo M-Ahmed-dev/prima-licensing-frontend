@@ -40,11 +40,11 @@ const Searchbar: React.FC = () => {
               </InputLeftElement>
               <Input
                 sx={{
-                  background: theme.colors.secondaryLight,
+                  background: "#E6F0F2",
                   borderRadius: "10px",
                   color: theme.colors.secondary,
                   lineHeight: "normal",
-                  opacity: "0.15000000596046448",
+                  border: "none",
 
                   "&::placeholder": {
                     opacity: 1,
@@ -62,6 +62,8 @@ const Searchbar: React.FC = () => {
             <Button
               maxWidth="200px"
               sx={theme.buttons.secondarySmall}
+              border={`3px solid ${theme.colors.secondary}`}
+              textTransform="uppercase"
               height="41px"
               fontSize="18px"
               padding="20px"
@@ -71,7 +73,9 @@ const Searchbar: React.FC = () => {
             <Button
               maxWidth="200px"
               fontSize="18px"
+              textTransform="uppercase"
               sx={theme.buttons.secondarySmall}
+              border={`3px solid ${theme.colors.secondary}`}
               height="41px"
               padding="20px"
             >

@@ -31,31 +31,43 @@ const TabsComponent: React.FC = () => {
     bgPosition: "center",
     bgRepeat: "no-repeat",
     padding: "33px",
+    height: "100vh",
   };
-
-  const tabsData = [
-    { label: "Plugins", to: "/" },
-    { label: "Prima Integration", to: "/prima-integration" },
-    { label: "Settings", to: "/settings" },
-  ];
 
   return (
     <>
       <Router>
         <Tabs variant="unstyled">
           <TabList>
-            {tabsData.map((tab, index) => (
-              <Tab key={index} _selected={selected}>
-                <Link to={tab.to}>{tab.label}</Link>
-              </Tab>
-            ))}
+            <Tab textTransform="uppercase" _selected={selected}>
+              <Link to="/">Plugins</Link>
+            </Tab>
+            <Tab textTransform="uppercase" _selected={selected}>
+              <Link to="/prima-integration">Prima Integration</Link>
+            </Tab>
+            <Tab
+              textTransform="uppercase"
+              marginLeft="auto"
+              _selected={selected}
+            >
+              <Link to="/settings">Settings</Link>
+            </Tab>
           </TabList>
           <TabPanels border="3px solid #252020">
             <TabPanel bgImage={bgImage} sx={panel}>
-              <Box display="flex" gap="30px" flexWrap="wrap">
-                <ShowNewUpdate />
-                <ShowNewPlugin />
-              </Box>
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <Box display="flex" gap="30px" flexWrap="wrap">
+                        <ShowNewUpdate />
+                        <ShowNewPlugin />
+                      </Box>
+                    </>
+                  }
+                />
+              </Routes>
             </TabPanel>
 
             <TabPanel sx={panel}>
@@ -71,6 +83,7 @@ const TabsComponent: React.FC = () => {
                 bgRepeat: "no-repeat",
                 padding: "33px",
                 marginLeft: "auto",
+                height: "100vh",
               }}
             >
               <Routes>

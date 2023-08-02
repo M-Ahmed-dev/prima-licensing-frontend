@@ -33,9 +33,9 @@ const DataTable: React.FC = () => {
       borderCollapse: "separate",
       borderSpacing: "0 8px",
     },
-    Tr: {
-      border: `3px solid ${theme.colors.secondaryLight}`,
-    },
+    // Tr: {
+    //   border: `3px solid ${theme.colors.secondaryLight}`,
+    // },
     Th: {
       fontSize: "18px",
       color: theme.colors.secondary,
@@ -69,7 +69,12 @@ const DataTable: React.FC = () => {
   return (
     <>
       <TableContainer>
-        <Table variant="unstyled" mt="20px" sx={customTable}>
+        <Table
+          variant="striped"
+          colorScheme="red.500"
+          mt="20px"
+          sx={customTable}
+        >
           <Thead>
             <Tr>
               <Th>

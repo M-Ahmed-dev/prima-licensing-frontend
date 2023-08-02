@@ -10,7 +10,7 @@ import React, { useState } from "react";
 const ToggleSwitch: React.FC = () => {
   const theme = useTheme();
 
-  const [isSwitchOn, setIsSwitchOn] = useState(false);
+  const [isSwitchOn, setIsSwitchOn] = useState(true);
 
   const handleSwitchChange = () => {
     setIsSwitchOn((prevState) => !prevState);
@@ -20,10 +20,12 @@ const ToggleSwitch: React.FC = () => {
     "& .chakra-switch__track": {
       border: `3px solid ${theme.colors.secondaryLight}`,
       bg: isSwitchOn ? theme.colors.white : theme.colors.secondaryLight,
-      padding: "5px",
+      padding: "5px 8px",
+      width: "60px",
     },
     "& .chakra-switch__thumb": {
       bg: isSwitchOn ? theme.colors.secondary : theme.colors.white,
+      margin: isSwitchOn ? "auto" : "0",
     },
   };
   return (
@@ -37,6 +39,7 @@ const ToggleSwitch: React.FC = () => {
             isChecked={isSwitchOn}
             onChange={handleSwitchChange}
             sx={SwitchStyles}
+            defaultChecked
           />
           <FormLabel
             cursor="pointer"

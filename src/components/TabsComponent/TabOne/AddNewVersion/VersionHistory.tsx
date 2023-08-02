@@ -39,6 +39,7 @@ const VersionHistory: React.FC = () => {
             sx={{
               border: `3px solid ${theme.colors.secondary}`,
               padding: "11px 14px",
+              maxWidth: "471px",
             }}
           >
             <Text sx={theme.fonts.tealParagraph}>{boxData.version}</Text>

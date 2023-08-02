@@ -7,7 +7,7 @@ const PrimaIntegration: React.FC = () => {
 
   return (
     <>
-      <Text sx={theme.fonts.h1}>prima integration</Text>
+      <Text sx={theme.fonts.h1}>priima integration</Text>
       <Text>
         Version <span style={{ fontWeight: "600" }}>2.2.5</span>
       </Text>

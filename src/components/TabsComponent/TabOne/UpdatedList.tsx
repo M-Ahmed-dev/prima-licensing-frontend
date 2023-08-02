@@ -27,7 +27,11 @@ const UpdatedList: React.FC = () => {
           >
             2.2.5
           </Text>
-          <Text fontSize="18px" color={theme.colors.secondaryLight}>
+          <Text
+            fontWeight="600"
+            fontSize="18px"
+            color={theme.colors.secondaryLight}
+          >
             20.06.2023
           </Text>
         </Box>

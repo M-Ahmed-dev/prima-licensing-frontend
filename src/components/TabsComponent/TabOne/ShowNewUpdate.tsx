@@ -15,6 +15,8 @@ const ShowNewUpdate: React.FC = () => {
   };
   const BoxStyles = {
     maxWidth: "537px",
+    minHeight: "802px",
+
     width: "100%",
     background: theme.colors.white,
     border: `3px solid ${theme.colors.secondaryLight}`,

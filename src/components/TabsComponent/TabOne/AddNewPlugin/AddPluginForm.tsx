@@ -2,8 +2,8 @@ import {
   Box,
   Button,
   FormControl,
-  FormLabel,
   Input,
+  Text,
   Textarea,
   useTheme,
 } from "@chakra-ui/react";
@@ -19,46 +19,50 @@ const AddPluginForm: React.FC<Props> = ({ handleSecondBoxClick }) => {
     <>
       <FormControl>
         <Box>
-          <FormLabel sx={theme.fonts.subHeading}>Plugin name</FormLabel>
+          <Text sx={theme.fonts.subHeading}>Plugin name</Text>
           <Input
             variant="flushed"
-            placeholder="name"
+            placeholder="Add name"
             color={theme.colors.secondary}
             fontWeight="500"
             borderBottom="3px solid"
+            paddingLeft="16px"
           />
         </Box>
         <Box mt="10px">
-          <FormLabel sx={theme.fonts.subHeading}>Plugin slug</FormLabel>
+          <Text sx={theme.fonts.subHeading}>Plugin Slug</Text>
           <Input
             variant="flushed"
-            placeholder="name"
+            placeholder="Add Slug"
             color={theme.colors.secondary}
             fontWeight="500"
             borderBottom="3px solid"
+            paddingLeft="16px"
           />
         </Box>
 
         <Box mt="10px">
-          <FormLabel sx={theme.fonts.subHeading}>Latest Version</FormLabel>
+          <Text sx={theme.fonts.subHeading}>Latest Version</Text>
           <Input
             variant="flushed"
-            placeholder="name"
+            placeholder="Add version number"
             color={theme.colors.secondary}
             fontWeight="500"
             borderBottom="3px solid"
+            paddingLeft="16px"
           />
         </Box>
 
         <Box mt="30px">
-          <FormLabel sx={theme.fonts.subHeading}>Version description</FormLabel>
+          <Text sx={theme.fonts.subHeading}>Version Description</Text>
           <Textarea
-            placeholder="Here is a sample placeholder"
+            placeholder="Add description of the number"
             sx={{
-              border: "3px solid #39808B",
+              border: "4px solid #39808B",
               borderRadius: "none",
               color: "#39808B",
-              height: "190px",
+              height: "215px",
+              marginTop: "15px",
             }}
           />
         </Box>

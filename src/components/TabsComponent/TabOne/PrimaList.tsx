@@ -32,7 +32,9 @@ const PrimaList: React.FC<Props> = ({ handleUpdateClick }) => {
 
       <Box mt="19px">
         <Text sx={theme.fonts.subHeading}>Slug</Text>
-        <Text sx={theme.fonts.paragraph}>priima-lms-integration</Text>
+        <Text marginTop="7px" sx={theme.fonts.paragraph}>
+          priima-lms-integration
+        </Text>
       </Box>
 
       <Box mt="30px">

@@ -17,7 +17,6 @@ const theme = extendTheme({
     h1: {
       fontWeight: "700",
       fontSize: "25px",
-      color: "darkGray",
       textTransform: "uppercase",
     },
     subHeading: {
