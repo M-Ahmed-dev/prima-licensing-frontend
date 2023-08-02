@@ -6,16 +6,31 @@ const SettingsOptions: React.FC = () => {
 
   return (
     <Box mt="73px" display="flex" gap="10px" alignItems="center">
-      <Button maxWidth="124px" sx={theme.buttons.primarySmall}>
+      <Button height="48px" maxWidth="124px" sx={theme.buttons.primarySmall}>
         Default
       </Button>
-      <Button maxWidth="124px" sx={theme.buttons.secondarySmall}>
+      <Button
+        borderRadius="none"
+        maxWidth="124px"
+        height="48px"
+        sx={theme.buttons.secondarySmall}
+      >
         tutors.fi
       </Button>
-      <Button maxWidth="168px" sx={theme.buttons.secondarySmall}>
+      <Button
+        borderRadius="none"
+        height="48px"
+        maxWidth="168px"
+        sx={theme.buttons.secondarySmall}
+      >
         shockey.com
       </Button>
-      <Button maxWidth="124px" sx={theme.buttons.secondarySmall}>
+      <Button
+        borderRadius="none"
+        height="48px"
+        maxWidth="124px"
+        sx={theme.buttons.secondarySmall}
+      >
         custom
       </Button>
     </Box>

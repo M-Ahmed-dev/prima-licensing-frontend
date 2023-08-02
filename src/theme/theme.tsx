@@ -44,10 +44,10 @@ const theme = extendTheme({
       bg: "secondary",
       color: "white",
       fontWeight: "700",
-      fontSize: "22px",
       width: "100%",
       borderRadius: "none",
       padding: "20px",
+      fontSize: "22px",
       textTransform: "uppercase",
     },
 
@@ -78,26 +78,21 @@ const theme = extendTheme({
       fontWeight: "700",
       borderRadius: "none",
       textTransform: "uppercase",
-      minHeight: "35px",
       width: "100%",
     },
     secondarySmall: {
       width: "100%",
-      height: "35px",
       bg: "white",
-      border: "3px solid #39808B",
       color: "secondary",
-
+      borderRadius: "none",
     },
     addZip: {
-      border: "3px solid #39808B",
       color: "secondary",
       textTransform: "uppercase",
       borderRadius: "none",
 
       fontWeight: "700",
       fontSize: "15px",
-      height: "35px",
       width: "100%",
     },
     discardSm: {
@@ -107,7 +102,6 @@ const theme = extendTheme({
       borderRadius: "none",
       fontWeight: "700",
       fontSize: "15px",
-      height: "35px",
       width: "100%",
     },
     saveSm: {
@@ -117,7 +111,6 @@ const theme = extendTheme({
       textTransform: "uppercase",
       fontWeight: "700",
       fontSize: "15px",
-      height: "35px",
       width: "100%",
     },
   },

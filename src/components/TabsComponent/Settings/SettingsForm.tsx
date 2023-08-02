@@ -6,7 +6,7 @@ const SettingsForm: React.FC = () => {
   return (
     <>
       <Box mt="40px">
-        <Text marginBottom="10px" sx={theme.fonts.paragraph}>
+        <Text fontWeight="700" marginBottom="10px" sx={theme.fonts.paragraph}>
           Email Subject
         </Text>
         <Input
@@ -21,7 +21,7 @@ const SettingsForm: React.FC = () => {
       </Box>
 
       <Box mt="40px">
-        <Text marginBottom="10px" sx={theme.fonts.paragraph}>
+        <Text fontWeight="700" marginBottom="10px" sx={theme.fonts.paragraph}>
           Email Body
         </Text>
         <Input

@@ -20,6 +20,7 @@ const ToggleSwitch: React.FC = () => {
     "& .chakra-switch__track": {
       border: `3px solid ${theme.colors.secondaryLight}`,
       bg: isSwitchOn ? theme.colors.white : theme.colors.secondaryLight,
+      padding: "5px",
     },
     "& .chakra-switch__thumb": {
       bg: isSwitchOn ? theme.colors.secondary : theme.colors.white,
@@ -41,7 +42,7 @@ const ToggleSwitch: React.FC = () => {
             cursor="pointer"
             mb="0"
             color={theme.colors.secondary}
-            fontWeight="600"
+            fontWeight="700"
             textTransform="uppercase"
             fontSize="18px"
           >

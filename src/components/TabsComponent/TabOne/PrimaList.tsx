@@ -40,8 +40,9 @@ const PrimaList: React.FC<Props> = ({ handleUpdateClick }) => {
           onClick={handleUpdateClick}
           sx={theme.buttons.primary}
           height="none"
+          fontSize="22px"
         >
-          Update
+          Edit
         </Button>
         <Button mt="11px" sx={theme.buttons.delete} height="none">
           Delete

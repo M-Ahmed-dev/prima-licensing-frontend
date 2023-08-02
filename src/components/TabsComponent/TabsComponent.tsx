@@ -30,7 +30,6 @@ const TabsComponent: React.FC = () => {
     bgSize: "cover",
     bgPosition: "center",
     bgRepeat: "no-repeat",
-    height: "100vh",
     padding: "33px",
   };
 
@@ -64,7 +63,16 @@ const TabsComponent: React.FC = () => {
                 <Route path="/prima-integration" element={<PrimaTable />} />
               </Routes>
             </TabPanel>
-            <TabPanel bgImage={bgImage} sx={panel}>
+            <TabPanel
+              bgImage={bgImage}
+              sx={{
+                bgSize: "cover",
+                bgPosition: "center",
+                bgRepeat: "no-repeat",
+                padding: "33px",
+                marginLeft: "auto",
+              }}
+            >
               <Routes>
                 <Route path="/settings" element={<Settings />} />
               </Routes>

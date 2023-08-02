@@ -20,16 +20,31 @@ const UpdatedList: React.FC = () => {
         justifyContent="space-between"
       >
         <Box>
-          <Text sx={theme.fonts.tealParagraph}>2.2.5</Text>
-          <Text sx={theme.fonts.tealParagraph}>20.06.2023</Text>
+          <Text
+            fontWeight="700"
+            fontSize="18px"
+            color={theme.colors.secondaryLight}
+          >
+            2.2.5
+          </Text>
+          <Text fontSize="18px" color={theme.colors.secondaryLight}>
+            20.06.2023
+          </Text>
         </Box>
-        <Button maxWidth="134px" sx={theme.buttons.secondarySmall}>
+        <Button
+          border="3px solid #39808B"
+          maxWidth="134px"
+          fontSize="18px"
+          textTransform="uppercase"
+          fontWeight="600"
+          sx={theme.buttons.secondarySmall}
+        >
           Download
         </Button>
       </Box>
       <UnorderedList mt="5px" lineHeight="normal">
-        <ListItem>bug fixes</ListItem>
-        <ListItem>added text</ListItem>
+        <ListItem fontSize="18px">bug fixes</ListItem>
+        <ListItem fontSize="18px">added text</ListItem>
       </UnorderedList>
     </>
   );
