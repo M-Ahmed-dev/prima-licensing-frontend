@@ -119,6 +119,16 @@ const theme = extendTheme({
       bg: "darkGray",
     },
   },
+
+  CheckBox: {
+    ".chakra-checkbox__control": {
+      border: "3px solid #5BA4AF",
+      padding: "10px",
+    },
+    ".chakra-checkbox__label": {
+      marginInlineStart: "2.5em",
+    },
+  },
 });
 
 export default theme;

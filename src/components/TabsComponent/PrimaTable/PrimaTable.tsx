@@ -1,12 +1,14 @@
 import React from "react";
-import DataTable from "./DataTable";
-import Searchbar from "./SearchBar";
+// import ElevenColumnTableWithRows from "./TableData/DemoTable";
+import DataTable from "./TableData/DataTable";
+import TableSearchHeader from "./TableSearchHeader";
 
 const PrimaTable: React.FC = () => {
   return (
     <>
-      <Searchbar />
+      <TableSearchHeader />
       <DataTable />
+      {/* <ElevenColumnTableWithRows /> */}
     </>
   );
 };

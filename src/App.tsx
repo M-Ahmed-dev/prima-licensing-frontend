@@ -2,6 +2,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
 import TabsComponent from "./components/TabsComponent/TabsComponent";
 import Layout from "./Layout/Layout";
+import "./index.css";
 import theme from "./theme/theme";
 
 function App() {

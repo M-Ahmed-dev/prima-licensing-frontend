@@ -13,6 +13,7 @@ const SettingsOptions: React.FC = () => {
         borderRadius="none"
         maxWidth="124px"
         height="48px"
+        fontSize="18px"
         border={`4px solid ${theme.colors.secondary}`}
         sx={theme.buttons.secondarySmall}
       >
@@ -21,6 +22,7 @@ const SettingsOptions: React.FC = () => {
       <Button
         borderRadius="none"
         height="48px"
+        fontSize="18px"
         maxWidth="168px"
         border={`4px solid ${theme.colors.secondary}`}
         sx={theme.buttons.secondarySmall}
@@ -30,6 +32,7 @@ const SettingsOptions: React.FC = () => {
       <Button
         borderRadius="none"
         height="48px"
+        fontSize="18px"
         maxWidth="124px"
         border={`4px solid ${theme.colors.secondary}`}
         sx={theme.buttons.secondarySmall}

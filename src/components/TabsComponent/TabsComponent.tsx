@@ -31,7 +31,6 @@ const TabsComponent: React.FC = () => {
     bgPosition: "center",
     bgRepeat: "no-repeat",
     padding: "33px",
-    height: "100vh",
   };
 
   return (
@@ -83,7 +82,6 @@ const TabsComponent: React.FC = () => {
                 bgRepeat: "no-repeat",
                 padding: "33px",
                 marginLeft: "auto",
-                height: "100vh",
               }}
             >
               <Routes>

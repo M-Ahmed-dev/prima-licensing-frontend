@@ -1,17 +1,10 @@
-import {
-  Box,
-  Button,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  useTheme,
-} from "@chakra-ui/react";
-import { SearchIcon } from "@chakra-ui/icons";
+import { Box, Button, useTheme } from "@chakra-ui/react";
 
 import React from "react";
 import AddLicense from "./AddLicense";
+import SearchInput from "./SearchInput";
 
-const Searchbar: React.FC = () => {
+const TableSearchHeader: React.FC = () => {
   const theme = useTheme();
 
   const [value, setValue] = React.useState<boolean>(false);
@@ -29,34 +22,8 @@ const Searchbar: React.FC = () => {
           border="3px solid #39808B"
           padding="13px 26px"
         >
-          <Box>
-            <InputGroup>
-              <InputLeftElement pointerEvents="none">
-                <SearchIcon
-                  sx={{
-                    color: theme.colors.secondaryLight,
-                  }}
-                />
-              </InputLeftElement>
-              <Input
-                sx={{
-                  background: "#E6F0F2",
-                  borderRadius: "10px",
-                  color: theme.colors.secondary,
-                  lineHeight: "normal",
-                  border: "none",
+          <SearchInput />
 
-                  "&::placeholder": {
-                    opacity: 1,
-                    color: theme.colors.secondary,
-                  },
-                }}
-                width="403px"
-                type="search"
-                placeholder="Search from 78 Licenses"
-              />
-            </InputGroup>
-          </Box>
           {/*  */}
           <Box marginLeft="auto" display="flex" alignItems="center" gap="11px">
             <Button
@@ -98,4 +65,4 @@ const Searchbar: React.FC = () => {
   );
 };
 
-export default Searchbar;
+export default TableSearchHeader;
