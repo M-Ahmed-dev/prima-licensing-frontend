@@ -1,10 +1,10 @@
 import React from "react";
-import navlogo from "../../assets/navlogo.svg";
+import logo from "../../assets/logo.png";
 
 const NavLogo: React.FC = () => {
   return (
     <>
-      <img src={navlogo} alt="Logo" />
+      <img src={logo} alt="NavLogo" />
     </>
   );
 };

@@ -5,7 +5,7 @@ interface Props {
   handleUpdateClick: () => void;
 }
 
-const PrimaIntegrationBtns: React.FC<Props> = ({ handleUpdateClick }) => {
+const AddNewPluginsBtns: React.FC<Props> = ({ handleUpdateClick }) => {
   const theme = useTheme();
 
   return (
@@ -29,4 +29,4 @@ const PrimaIntegrationBtns: React.FC<Props> = ({ handleUpdateClick }) => {
   );
 };
 
-export default PrimaIntegrationBtns;
+export default AddNewPluginsBtns;

@@ -11,10 +11,10 @@ import React from "react";
 import bgImage from "../../assets/bgImage.png";
 
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import PrimaTable from "./PrimaTable/PrimaTable";
-import Settings from "./Settings/Settings";
-import ShowNewUpdate from "./TabOne/ShowNewUpdate";
-import ShowNewPlugin from "./TabOne/ShowNewPlugin";
+import PrimaTable from "../TabsComponent/PrimaIntegrationTable/PrimaTable";
+import Settings from "../TabsComponent/SettingsTab/Settings";
+import ShowNewUpdate from "./PluginsTab/ShowNewUpdate";
+import ShowPlugin from "./PluginsTab/AddNewPlugin/ShowPlugin";
 
 const TabsComponent: React.FC = () => {
   const theme = useTheme();
@@ -67,7 +67,7 @@ const TabsComponent: React.FC = () => {
                     <>
                       <Box display="flex" gap="30px" flexWrap="wrap">
                         <ShowNewUpdate />
-                        <ShowNewPlugin />
+                        <ShowPlugin />
                       </Box>
                     </>
                   }

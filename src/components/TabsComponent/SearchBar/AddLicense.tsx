@@ -1,9 +1,9 @@
 import { Box, Select, Text, useTheme } from "@chakra-ui/react";
 import React from "react";
-import AddSectionOne from "./AddSectionOne";
-import AddSectionThree from "./AddSectionThree";
-import AddSectionTwo from "./AddSectionTwo";
-import ModalButtons from "./ModalButtons";
+import AddSectionOne from "../PrimaIntegrationTable/AddSectionOne";
+import AddSectionThree from "../PrimaIntegrationTable/AddSectionThree";
+import AddSectionTwo from "../PrimaIntegrationTable/AddSectionTwo";
+import ModalButtons from "../PrimaIntegrationTable/ModalButtons";
 // import ModalButtons from "./ModalButtons";
 
 interface Props {

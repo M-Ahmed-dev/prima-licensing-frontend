@@ -30,7 +30,7 @@ const ToggleSwitch: React.FC = () => {
   };
   return (
     <>
-      <Box>
+      <Box mt="20px">
         <FormControl display="flex" gap="9px" alignItems="center">
           <Switch
             cursor="pointer"

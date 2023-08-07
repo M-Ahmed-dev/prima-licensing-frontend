@@ -46,7 +46,7 @@ const AddSectionThree: React.FC = () => {
           color={theme.colors.secondary}
           fontWeight="500"
           border="3px solid"
-          width="522px"
+          width="100%"
         />
       </Box>
       <Box maxWidth="217px" width="100%">

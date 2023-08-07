@@ -84,6 +84,7 @@ const theme = extendTheme({
       bg: "white",
       color: "secondary",
       borderRadius: "none",
+      textTransform: "uppercase",
     },
     addZip: {
       color: "secondary",

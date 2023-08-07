@@ -53,15 +53,14 @@ const AddNewVersion = () => {
             </Box>
           </Box>
         ) : (
-          <>
+          <Box maxWidth="214px">
             <Button
               onClick={handleClickVersion}
               cursor="pointer"
-              mt="18px"
+              mt="5px"
               display="flex"
               justifyContent="space-around"
               fontSize="18px"
-              maxWidth="214px"
               sx={theme.buttons.primarySmall}
             >
               <div>
@@ -88,7 +87,7 @@ const AddNewVersion = () => {
               </div>
               New version
             </Button>
-          </>
+          </Box>
         )}
       </Box>
     </>

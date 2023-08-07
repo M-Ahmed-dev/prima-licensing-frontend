@@ -1,9 +1,9 @@
 import { Box, useTheme } from "@chakra-ui/react";
 import React, { useState } from "react";
-import AddNewPlugin from "./AddNewPlugin/AddNewPlugin";
-import AddPluginForm from "./AddNewPlugin/AddPluginForm";
+import AddNewPlugin from "./AddNewPlugin";
+import AddPluginForm from "./AddPluginForm";
 
-const ShowNewPlugin: React.FC = () => {
+const ShowPlugin: React.FC = () => {
   const theme = useTheme();
   const [showNewBox, setShowNewBox] = useState(false);
 
@@ -40,4 +40,4 @@ const ShowNewPlugin: React.FC = () => {
   );
 };
 
-export default ShowNewPlugin;
+export default ShowPlugin;
