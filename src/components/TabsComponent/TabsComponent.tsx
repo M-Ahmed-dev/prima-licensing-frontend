@@ -38,19 +38,25 @@ const TabsComponent: React.FC = () => {
       <Router>
         <Tabs variant="unstyled">
           <TabList>
-            <Tab textTransform="uppercase" _selected={selected}>
-              <Link to="/">Plugins</Link>
-            </Tab>
-            <Tab textTransform="uppercase" _selected={selected}>
-              <Link to="/prima-integration">Prima Integration</Link>
-            </Tab>
-            <Tab
-              textTransform="uppercase"
-              marginLeft="auto"
-              _selected={selected}
-            >
-              <Link to="/settings">Settings</Link>
-            </Tab>
+            <Link to="/">
+              <Tab textTransform="uppercase" _selected={selected}>
+                Plugins
+              </Tab>
+            </Link>
+            <Link to="/prima-integration">
+              <Tab textTransform="uppercase" _selected={selected}>
+                Prima Integration
+              </Tab>
+            </Link>
+            <Link to="/settings">
+              <Tab
+                textTransform="uppercase"
+                marginLeft="auto"
+                _selected={selected}
+              >
+                Settings
+              </Tab>
+            </Link>
           </TabList>
           <TabPanels border="3px solid #252020">
             <TabPanel bgImage={bgImage} sx={panel}>
