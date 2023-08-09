@@ -10,7 +10,6 @@ import {
   Tbody,
   TableContainer,
   Box,
-  Divider,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 
@@ -141,12 +140,8 @@ const DataTable: React.FC = () => {
             </Tr>
           </Thead>
 
-          <Divider
-            sx={{
-              borderBottomWidth: "none",
-              padding: "5px",
-            }}
-          />
+          <Box padding="5px"></Box>
+
           <Tbody>
             {pluginsData.map((item, index) => (
               <>
@@ -195,12 +190,7 @@ const DataTable: React.FC = () => {
                   <Td>{item.status}</Td>
                   <Td>{item.soldFree}</Td>
                 </Tr>
-                <Divider
-                  sx={{
-                    borderBottomWidth: "none",
-                    padding: "5px",
-                  }}
-                />
+                <Box padding="5px"></Box>
               </>
             ))}
           </Tbody>
