@@ -22,7 +22,13 @@ const TabsComponent: React.FC = () => {
   const selected = {
     bg: theme.colors.gray,
     color: theme.colors.white,
-    height: "40px",
+    height: "100%",
+    textTransform: "uppercase",
+  };
+
+  const TabStyle = {
+    fontFamily: "Roboto",
+    fontSize: "20px",
     textTransform: "uppercase",
   };
 
@@ -33,27 +39,27 @@ const TabsComponent: React.FC = () => {
     padding: "33px",
   };
 
+  const settingsTab = {
+    marginLeft: "auto",
+  };
+
   return (
     <>
       <Router>
         <Tabs variant="unstyled">
           <TabList>
             <Link to="/">
-              <Tab textTransform="uppercase" _selected={selected}>
+              <Tab sx={TabStyle} _selected={selected}>
                 Plugins
               </Tab>
             </Link>
             <Link to="/prima-integration">
-              <Tab textTransform="uppercase" _selected={selected}>
+              <Tab sx={TabStyle} _selected={selected}>
                 Prima Integration
               </Tab>
             </Link>
-            <Link to="/settings">
-              <Tab
-                textTransform="uppercase"
-                marginLeft="auto"
-                _selected={selected}
-              >
+            <Link to="/settings" style={settingsTab}>
+              <Tab sx={TabStyle} _selected={selected}>
                 Settings
               </Tab>
             </Link>
@@ -66,8 +72,21 @@ const TabsComponent: React.FC = () => {
                   element={
                     <>
                       <Box display="flex" gap="30px" flexWrap="wrap">
-                        <ShowNewUpdate />
-                        <ShowPlugin />
+                        <Box
+                          sx={{
+                            minWidth: "537px",
+                          }}
+                        >
+                          <ShowNewUpdate />
+                        </Box>
+                        <Box
+                          sx={{
+                            flexGrow: 1,
+                            height: "100%",
+                          }}
+                        >
+                          <ShowPlugin />
+                        </Box>
                       </Box>
                     </>
                   }

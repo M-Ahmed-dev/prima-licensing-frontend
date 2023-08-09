@@ -1,5 +1,6 @@
 import { Box, Link, Text, useTheme } from "@chakra-ui/react";
 import React from "react";
+import PastUpdates from "./PastUpdates";
 import UpdatedList from "./UpdatedList";
 
 const PrimaDescriptionList: React.FC = () => {
@@ -14,10 +15,16 @@ const PrimaDescriptionList: React.FC = () => {
       <Box mt="24px">
         <Text sx={theme.fonts.subHeading}>Updated</Text>
         <UpdatedList />
+        <PastUpdates />
       </Box>
 
       <Box mt="12px">
-        <Link fontWeight="700" color={theme.colors.secondaryLight}>
+        <Link
+          fontWeight="600"
+          fontFamily="Roboto"
+          fontSize="15px"
+          color={theme.colors.secondaryLight}
+        >
           Show all past updates
         </Link>
       </Box>

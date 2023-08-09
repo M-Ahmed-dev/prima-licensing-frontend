@@ -6,8 +6,7 @@ const ShowNewUpdate: React.FC = () => {
   const theme = useTheme();
 
   const BoxStyles = {
-    maxWidth: "537px",
-    minHeight: "802px",
+    minHeight: "860px",
 
     width: "100%",
     background: theme.colors.white,
@@ -16,12 +15,7 @@ const ShowNewUpdate: React.FC = () => {
   };
 
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
-      sx={BoxStyles}
-    >
+    <Box sx={BoxStyles}>
       <MainView />
     </Box>
   );

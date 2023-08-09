@@ -38,7 +38,7 @@ const MainView: React.FC = () => {
 
       <Box mt="19px">
         <Text sx={theme.fonts.subHeading}>Slug</Text>
-        <Text marginTop="7px" sx={theme.fonts.paragraph}>
+        <Text mt="4px" sx={theme.fonts.paragraph}>
           priima-lms-integration
         </Text>
       </Box>

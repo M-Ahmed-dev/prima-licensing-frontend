@@ -13,20 +13,20 @@ const theme = extendTheme({
   },
 
   fonts: {
-    fontFamily: "inherit",
     h1: {
       fontWeight: "700",
       fontSize: "25px",
       textTransform: "uppercase",
     },
+
     subHeading: {
-      fontWeight: "700",
-      fontSize: "20px",
+      fontFamily: "Roboto",
       color: "darkGray",
-    },
-    tealParagraph: {
+      fontSize: "20px",
       fontWeight: "700",
-      fontSize: "18px",
+    },
+
+    tealParagraph: {
       color: "secondary",
       lineHeight: "normal",
     },
@@ -35,6 +35,17 @@ const theme = extendTheme({
       fontSize: "18px",
       color: "darkGray",
       lineHeight: "normal",
+    },
+
+    unorderedList: {
+      fontFamily: "Roboto",
+      lineHeight: "normal",
+      color: "darkGray",
+    },
+
+    versionDate: {
+      fontFamily: "Inter",
+      color: "secondaryLight",
     },
   },
 
@@ -74,7 +85,6 @@ const theme = extendTheme({
     primarySmall: {
       bg: "secondary",
       color: "white",
-      fontWeight: "700",
       borderRadius: "none",
       textTransform: "uppercase",
       width: "100%",

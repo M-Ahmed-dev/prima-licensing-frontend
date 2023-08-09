@@ -25,16 +25,30 @@ const AddNewVersion = () => {
             mt="16px"
             sx={{
               border: `3px solid ${theme.colors.secondary}`,
-              padding: "11px 14px",
+              padding: "11px 20px",
             }}
           >
             <Box>
-              <Text sx={theme.fonts.tealParagraph}>Version</Text>
-              <Text sx={theme.fonts.tealParagraph}>2.2.5</Text>
+              <Box display="flex" justifyContent="space-between">
+                <Text fontWeight="700" sx={theme.fonts.tealParagraph}>
+                  Version
+                </Text>
+                <Text fontWeight="700" mt="5px" sx={theme.fonts.tealParagraph}>
+                  2.2.5
+                </Text>
+              </Box>
+              <Text mt="5px" sx={theme.fonts.tealParagraph}>
+                20.03.2023
+              </Text>
             </Box>
+
             <Box mt="10px">
-              <Text sx={theme.fonts.tealParagraph}>Add details</Text>
-              <UnorderedList>
+              <Text fontWeight="700" sx={theme.fonts.tealParagraph}>
+                Description
+              </Text>
+              <UnorderedList mt="5px" color={theme.colors.secondary}>
+                <ListItem>updated language</ListItem>
+                <ListItem>updated language</ListItem>
                 <ListItem>updated language</ListItem>
               </UnorderedList>
             </Box>
@@ -44,7 +58,7 @@ const AddNewVersion = () => {
                 border={`3px solid ${theme.colors.secondary}`}
                 sx={theme.buttons.addZip}
               >
-                Add Zip
+                Browse File
               </Button>
               <Button sx={theme.buttons.discardSm} onClick={handleClickVersion}>
                 Discard
@@ -53,14 +67,17 @@ const AddNewVersion = () => {
             </Box>
           </Box>
         ) : (
-          <Box maxWidth="214px">
+          <Box width="214px">
             <Button
               onClick={handleClickVersion}
               cursor="pointer"
-              mt="5px"
+              mt="20px"
               display="flex"
-              justifyContent="space-around"
-              fontSize="18px"
+              height="43px"
+              fontWeight="700"
+              gap="10px"
+              alignItems="center"
+              fontSize="20px"
               sx={theme.buttons.primarySmall}
             >
               <div>

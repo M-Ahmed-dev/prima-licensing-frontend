@@ -19,7 +19,7 @@ const AddSectionOne: React.FC = () => {
   };
 
   return (
-    <Box maxWidth="400px" width="100%">
+    <Box>
       <Box>
         <FormLabel sx={theme.fonts.subHeading}>Domain</FormLabel>
         <Input
@@ -28,6 +28,8 @@ const AddSectionOne: React.FC = () => {
           color={theme.colors.secondary}
           fontWeight="500"
           borderBottom="3px solid"
+          width="100%"
+          minWidth="400px"
         />
       </Box>
 
@@ -35,10 +37,14 @@ const AddSectionOne: React.FC = () => {
         <FormLabel marginTop="30px" sx={theme.fonts.subHeading}>
           License Key
         </FormLabel>
-        <Text>111C431E2XC3CB3LMM2YGH141</Text>
-        <Link>Generate Again</Link>
+        <Text fontWeight="600" sx={theme.fonts.tealParagraph}>
+          111C431E2XC3CB3LMM2YGH141
+        </Text>
+        <Link fontWeight="600" sx={theme.fonts.tealParagraph}>
+          Generate Again
+        </Link>
       </Box>
-      <Box minWidth="298px">
+      <Box width="222px">
         <Text sx={theme.fonts.subHeading} marginBottom="10px" marginTop="30px">
           Site Type
         </Text>
@@ -49,7 +55,7 @@ const AddSectionOne: React.FC = () => {
         </Select>
       </Box>
 
-      <Box minWidth="298px">
+      <Box width="222px">
         <Text sx={theme.fonts.subHeading} marginBottom="10px" marginTop="30px">
           Subscription
         </Text>

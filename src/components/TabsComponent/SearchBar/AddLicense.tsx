@@ -62,10 +62,11 @@ const AddLicense: React.FC<Props> = ({ handleClick }) => {
 
         <Box padding="30px" width="100%" borderLeft="3px solid #39808B">
           <Box
-            display="flex"
-            justifyContent="space-between"
-            width="100%"
-            flexWrap="wrap"
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "flex-start",
+            }}
           >
             <AddSectionOne />
             <AddSectionTwo />

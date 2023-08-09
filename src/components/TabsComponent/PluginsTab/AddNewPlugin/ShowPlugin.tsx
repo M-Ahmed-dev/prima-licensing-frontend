@@ -12,9 +12,9 @@ const ShowPlugin: React.FC = () => {
   };
 
   const BoxStyles = {
-    maxWidth: "537px",
-    minHeight: "802px",
-    width: "100%",
+    width: "537px",
+    minHeight: "860px",
+
     background: theme.colors.white,
     border: `3px solid ${theme.colors.secondaryLight}`,
     padding: "20px 25px",

@@ -10,6 +10,7 @@ import {
   Tbody,
   TableContainer,
   Box,
+  Divider,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 
@@ -49,19 +50,22 @@ const DataTable: React.FC = () => {
         <Table
           variant="unstyled"
           mt="20px"
-          textTransform="uppercase"
-          fontFamily="Inherit"
+          fontFamily="Inter"
           fontStyle="normal"
         >
-          <Thead>
+          <Thead
+            sx={{
+              border: `3px solid ${theme.colors.secondaryLight}`,
+            }}
+          >
             <Tr
               sx={{
                 th: {
                   fontSize: "18px",
                   color: theme.colors.secondary,
-                  fontFamily: "inherit",
                   padding: "22px",
-                  borderBottom: `3px solid ${theme.colors.secondaryLight}`,
+                  fontFamily: "Inter",
+                  fontWeight: "600",
                 },
               }}
             >
@@ -137,51 +141,67 @@ const DataTable: React.FC = () => {
             </Tr>
           </Thead>
 
+          <Divider
+            sx={{
+              borderBottomWidth: "none",
+              padding: "5px",
+            }}
+          />
           <Tbody>
-            {pluginsData.map((item) => (
-              <Tr
-                key={item.sr}
-                border={
-                  item.expiryDate === "01.01.2023"
-                    ? "3px solid #CD2D2D"
-                    : "none"
-                }
-                backgroundColor={item.isChecked ? "#E4F0F1" : ""}
-                sx={{
-                  td: {
-                    fontSize: "18px",
-                    fontWeight: "100",
-                  },
-                }}
-              >
-                <Td>
-                  <Checkbox
-                    isChecked={item.isChecked}
-                    onChange={() => handleCheckboxChange(item.sr)}
-                    sx={checkBoxStyle}
-                    size="lg"
-                  >
-                    {item.domainWebsite}
-                  </Checkbox>
-                </Td>
-                <Td>{item.licenseKey}</Td>
-                <Td>{item.siteType}</Td>
-                <Td>{item.demo}</Td>
-                <Td>{item.sellEnv}</Td>
-                <Td>{item.premiumType}</Td>
-                <Td>{item.subscription}</Td>
-                <Td>{item.createdAt}</Td>
-                <Td
+            {pluginsData.map((item, index) => (
+              <>
+                <Tr
+                  key={item.sr}
+                  border={
+                    item.expiryDate === "01.01.2023"
+                      ? "3px solid #CD2D2D"
+                      : "3px solid #5BA4AF"
+                  }
+                  backgroundColor={item.isChecked ? "#E4F0F1" : ""}
                   sx={{
-                    color:
-                      item.expiryDate === "01.01.2023" ? "#FF0000" : "none",
+                    td: {
+                      fontSize: "18px",
+                      fontFamily: "Inter",
+                      fontWeight: "400",
+                    },
+                    marginBottom: index > 0 ? "90px" : "0", // Adjust the spacing as needed
                   }}
                 >
-                  {item.expiryDate}
-                </Td>
-                <Td>{item.status}</Td>
-                <Td>{item.soldFree}</Td>
-              </Tr>
+                  <Td>
+                    <Checkbox
+                      isChecked={item.isChecked}
+                      onChange={() => handleCheckboxChange(item.sr)}
+                      sx={checkBoxStyle}
+                      size="lg"
+                    >
+                      {item.domainWebsite}
+                    </Checkbox>
+                  </Td>
+                  <Td>{item.licenseKey}</Td>
+                  <Td>{item.siteType}</Td>
+                  <Td>{item.demo}</Td>
+                  <Td>{item.sellEnv}</Td>
+                  <Td>{item.premiumType}</Td>
+                  <Td>{item.subscription}</Td>
+                  <Td>{item.createdAt}</Td>
+                  <Td
+                    sx={{
+                      color:
+                        item.expiryDate === "01.01.2023" ? "#FF0000" : "none",
+                    }}
+                  >
+                    {item.expiryDate}
+                  </Td>
+                  <Td>{item.status}</Td>
+                  <Td>{item.soldFree}</Td>
+                </Tr>
+                <Divider
+                  sx={{
+                    borderBottomWidth: "none",
+                    padding: "5px",
+                  }}
+                />
+              </>
             ))}
           </Tbody>
         </Table>

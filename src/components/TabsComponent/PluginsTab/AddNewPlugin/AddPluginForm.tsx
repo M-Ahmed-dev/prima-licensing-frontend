@@ -61,7 +61,7 @@ const AddPluginForm: React.FC<Props> = ({ handleSecondBoxClick }) => {
               border: "4px solid #39808B",
               borderRadius: "none",
               color: "#39808B",
-              height: "215px",
+              height: "254px",
               marginTop: "15px",
             }}
           />

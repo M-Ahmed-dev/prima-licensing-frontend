@@ -3,12 +3,12 @@ import {
   Button,
   ListItem,
   Text,
-  UnorderedList,
   useTheme,
+  UnorderedList,
 } from "@chakra-ui/react";
 import React from "react";
 
-const UpdatedList: React.FC = () => {
+const PastUpdates: React.FC = () => {
   const theme = useTheme();
 
   return (
@@ -52,4 +52,4 @@ const UpdatedList: React.FC = () => {
   );
 };
 
-export default UpdatedList;
+export default PastUpdates;

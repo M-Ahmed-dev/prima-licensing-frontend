@@ -15,12 +15,14 @@ const VersionHistory: React.FC = () => {
   const data = [
     {
       version: "2.2.5",
+      versionStatus: "Current",
       date: "20.06.2023",
       changes: ["bug fixes", "added text"],
     },
     {
       version: "2.2.5",
       date: "20.06.2023",
+      versionStatus: " ",
       changes: ["bug fixes", "language added", "added text"],
     },
   ];
@@ -42,9 +44,32 @@ const VersionHistory: React.FC = () => {
               maxWidth: "471px",
             }}
           >
-            <Text sx={theme.fonts.tealParagraph}>{boxData.version}</Text>
-            <Text color={theme.colors.secondary}>{boxData.date}</Text>
-            <UnorderedList>
+            <Box display="flex" justifyContent="space-between">
+              <Text
+                fontFamily="Inter"
+                fontWeight="700"
+                sx={theme.fonts.tealParagraph}
+              >
+                {boxData.version}
+              </Text>
+              <Text
+                textTransform="uppercase"
+                fontWeight="700"
+                fontSize="16px"
+                fontFamily="Inter"
+                sx={theme.fonts.tealParagraph}
+              >
+                {boxData.versionStatus}
+              </Text>
+            </Box>
+            <Text
+              fontFamily="Inter"
+              fontWeight="600"
+              sx={theme.fonts.tealParagraph}
+            >
+              {boxData.date}
+            </Text>
+            <UnorderedList mt="10px" ml="20px" sx={theme.fonts.unorderedList}>
               {boxData.changes.map((change, i) => (
                 <ListItem key={i}>{change}</ListItem>
               ))}

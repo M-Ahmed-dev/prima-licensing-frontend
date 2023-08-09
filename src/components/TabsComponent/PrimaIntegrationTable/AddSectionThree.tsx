@@ -38,7 +38,7 @@ const AddSectionThree: React.FC = () => {
   };
 
   return (
-    <Box maxWidth="530px" width="100%">
+    <Box maxWidth="522px" width="100%">
       <Box>
         <FormLabel sx={theme.fonts.subHeading}>Notes</FormLabel>
         <Textarea
@@ -46,6 +46,8 @@ const AddSectionThree: React.FC = () => {
           color={theme.colors.secondary}
           fontWeight="500"
           border="3px solid"
+          height="60px"
+          borderRadius="none"
           width="100%"
         />
       </Box>

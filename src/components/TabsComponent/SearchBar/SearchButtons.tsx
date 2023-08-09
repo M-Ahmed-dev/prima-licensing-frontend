@@ -34,6 +34,7 @@ const SearchButtons: React.FC<SearchButtonsProps> = ({ handleClick }) => {
         Export CSV
       </Button>
       <Button
+        width="100%"
         sx={{ ...theme.buttons.primarySmall, ...basicButtonStyles }}
         onClick={handleClick}
       >
