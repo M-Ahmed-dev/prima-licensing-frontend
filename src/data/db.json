@@ -1,0 +1,196 @@
+{
+  "plugins": [
+    {
+      "sr": 1,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "yes",
+
+      "premiumType": "variation",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "04.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 2,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "03.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 3,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "02.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 4,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "01.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 5,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "04.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 6,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "01.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 7,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "01.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 8,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "01.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 9,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "01.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 10,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "01.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    },
+    {
+      "sr": 11,
+      "domainWebsite": "tutors.fi",
+      "licenseKey": "N2B11HP31114VLXT27B1L1DB1",
+      "siteType": "WordPress",
+      "demo": "yes",
+      "sellEnv": "",
+
+      "premiumType": "",
+      "subscription": "yearly",
+      "createdAt": "27-01-2022",
+      "expiryDate": "01.01.2023",
+      "status": "Active",
+      "soldFree": "611 / 415",
+      "isChecked": false
+    }
+  ],
+
+  "TableHeading": [
+    {
+      "domainWebsite": "Domain/ Website",
+      "licenseKey": "License Key",
+      "siteType": "Site Type",
+      "demo": "Demo",
+      "sellEnv": "Sell Env",
+      "premiumType": "Premium Type",
+      "subscription": "Subscription",
+      "createdAt": "Created",
+      "expiryDate": "Expired Date",
+      "status": "Status",
+      "soldFree": "Sold/ Free"
+    }
+  ]
+}
