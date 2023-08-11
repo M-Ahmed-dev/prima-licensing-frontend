@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 
-const ToggleSwitch: React.FC = () => {
+const ActiveToggleSwitch: React.FC = () => {
   const theme = useTheme();
 
   const [isSwitchOn, setIsSwitchOn] = useState(false);
@@ -57,4 +57,4 @@ const ToggleSwitch: React.FC = () => {
   );
 };
 
-export default ToggleSwitch;
+export default ActiveToggleSwitch;

@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  useTheme,
-  ListItem,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Box, Button, useTheme, Text, Input } from "@chakra-ui/react";
 
 const AddNewVersion = () => {
   const theme = useTheme();
@@ -29,28 +22,29 @@ const AddNewVersion = () => {
             }}
           >
             <Box>
-              <Box display="flex" justifyContent="space-between">
-                <Text fontWeight="700" sx={theme.fonts.tealParagraph}>
-                  Version
-                </Text>
-                <Text fontWeight="700" mt="5px" sx={theme.fonts.tealParagraph}>
-                  2.2.5
-                </Text>
-              </Box>
-              <Text mt="5px" sx={theme.fonts.tealParagraph}>
-                20.03.2023
+              <Text fontWeight="700" sx={theme.fonts.tealParagraph}>
+                Version
               </Text>
+              <Input
+                sx={{
+                  borderBottom: "3px solid #39808B",
+                }}
+                variant="flushed"
+                placeholder="add version"
+              />
             </Box>
 
             <Box mt="10px">
               <Text fontWeight="700" sx={theme.fonts.tealParagraph}>
                 Description
               </Text>
-              <UnorderedList mt="5px" color={theme.colors.secondary}>
-                <ListItem>updated language</ListItem>
-                <ListItem>updated language</ListItem>
-                <ListItem>updated language</ListItem>
-              </UnorderedList>
+              <Input
+                sx={{
+                  borderBottom: "3px solid #39808B",
+                }}
+                variant="flushed"
+                placeholder="add description"
+              />
             </Box>
 
             <Box display="flex" gap="10px" mt="13px">

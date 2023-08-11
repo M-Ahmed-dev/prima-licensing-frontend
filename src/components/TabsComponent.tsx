@@ -8,13 +8,13 @@ import {
   Box,
 } from "@chakra-ui/react";
 import React from "react";
-import bgImage from "../../assets/bgImage.png";
+import bgImage from "../assets/bgImage.png";
 
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import PrimaTable from "../TabsComponent/PrimaIntegrationTable/PrimaTable";
-import Settings from "../TabsComponent/SettingsTab/Settings";
 import ShowNewUpdate from "./PluginsTab/ShowNewUpdate";
 import ShowPlugin from "./PluginsTab/AddNewPlugin/ShowPlugin";
+import PrimaTable from "./PrimaIntegrationTable/PrimaTable";
+import Settings from "./SettingsTab/Settings";
 
 const TabsComponent: React.FC = () => {
   const theme = useTheme();

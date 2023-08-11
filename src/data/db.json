@@ -180,33 +180,17 @@
 
   "TableHeading": [
     {
-      "sr": "sr.",
-      "pluginName": "Plugin Name",
       "domainWebsite": "Domain/ Website",
-      "soldFree": "Sold/ Free",
-      "latestVersion": "Latest Version",
-      "slug": "slug",
       "licenseKey": "License Key",
-      "licenseType": "License Type",
-      "expiryDate": "Expiry Date",
+      "siteType": "Site Type",
+      "demo": "Demo",
       "sellEnv": "Sell Env",
-      "premium": "Premium",
+      "premiumType": "Premium Type",
+      "subscription": "Subscription",
+      "createdAt": "Created",
+      "expiryDate": "Expired Date",
       "status": "Status",
-      "createdAt": "Created At"
-    }
-  ],
-  "tabs": [
-    {
-      "tabName": "Plugins",
-      "id": "0"
-    },
-    {
-      "tabName": "Plugins License",
-      "id": "1"
-    },
-    {
-      "tabName": "Settings",
-      "id": "2"
+      "soldFree": "Sold/ Free"
     }
   ]
 }

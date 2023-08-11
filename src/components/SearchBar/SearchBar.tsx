@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 
 import React from "react";
-import AddLicense from "./AddLicense";
+import AddLicense from "../AddLicenseModal/AddLicense";
 import SearchButtons from "./SearchButtons";
 import SearchInput from "./SearchInput";
 
