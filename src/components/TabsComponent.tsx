@@ -36,7 +36,7 @@ const TabsComponent: React.FC = () => {
     bgSize: "cover",
     bgPosition: "center",
     bgRepeat: "no-repeat",
-    padding: "33.1px",
+    padding: "33.2px",
   };
 
   const settingsTab = {
