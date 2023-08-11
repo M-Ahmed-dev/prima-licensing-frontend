@@ -13,7 +13,6 @@ const theme = extendTheme({
   },
 
   fonts: {
-<<<<<<< HEAD
     h1: {
       fontWeight: "700",
       fontSize: "25px",
@@ -28,23 +27,6 @@ const theme = extendTheme({
     },
 
     tealParagraph: {
-=======
-    fontFamily: "Roboto",
-    h1: {
-      fontWeight: "700",
-      fontSize: "25px",
-      color: "darkGray",
-      textTransform: "uppercase",
-    },
-    subHeading: {
-      fontWeight: "700",
-      fontSize: "20px",
-      color: "darkGray",
-    },
-    tealParagraph: {
-      fontWeight: "700",
-      fontSize: "18px",
->>>>>>> 5dec161faafb52b1f2e014376e43e3cc939cac1f
       color: "secondary",
       lineHeight: "normal",
     },
@@ -54,7 +36,6 @@ const theme = extendTheme({
       color: "darkGray",
       lineHeight: "normal",
     },
-<<<<<<< HEAD
 
     unorderedList: {
       fontFamily: "Roboto",
@@ -66,8 +47,6 @@ const theme = extendTheme({
       fontFamily: "Inter",
       color: "secondaryLight",
     },
-=======
->>>>>>> 5dec161faafb52b1f2e014376e43e3cc939cac1f
   },
 
   buttons: {
@@ -75,17 +54,10 @@ const theme = extendTheme({
       bg: "secondary",
       color: "white",
       fontWeight: "700",
-<<<<<<< HEAD
       width: "100%",
       borderRadius: "none",
       padding: "20px",
       fontSize: "22px",
-=======
-      fontSize: "22px",
-      width: "100%",
-      borderRadius: "none",
-      padding: "20px",
->>>>>>> 5dec161faafb52b1f2e014376e43e3cc939cac1f
       textTransform: "uppercase",
     },
 
@@ -113,46 +85,24 @@ const theme = extendTheme({
     primarySmall: {
       bg: "secondary",
       color: "white",
-<<<<<<< HEAD
       borderRadius: "none",
       textTransform: "uppercase",
-=======
-      fontWeight: "700",
-      borderRadius: "none",
-      textTransform: "uppercase",
-      minHeight: "35px",
->>>>>>> 5dec161faafb52b1f2e014376e43e3cc939cac1f
       width: "100%",
     },
     secondarySmall: {
       width: "100%",
-<<<<<<< HEAD
       bg: "white",
       color: "secondary",
       borderRadius: "none",
       textTransform: "uppercase",
     },
     addZip: {
-=======
-      height: "35px",
-      bg: "white",
-      border: "3px solid #39808B",
-      color: "secondary",
-
-    },
-    addZip: {
-      border: "3px solid #39808B",
->>>>>>> 5dec161faafb52b1f2e014376e43e3cc939cac1f
       color: "secondary",
       textTransform: "uppercase",
       borderRadius: "none",
 
       fontWeight: "700",
       fontSize: "15px",
-<<<<<<< HEAD
-=======
-      height: "35px",
->>>>>>> 5dec161faafb52b1f2e014376e43e3cc939cac1f
       width: "100%",
     },
     discardSm: {
@@ -162,10 +112,6 @@ const theme = extendTheme({
       borderRadius: "none",
       fontWeight: "700",
       fontSize: "15px",
-<<<<<<< HEAD
-=======
-      height: "35px",
->>>>>>> 5dec161faafb52b1f2e014376e43e3cc939cac1f
       width: "100%",
     },
     saveSm: {
@@ -175,10 +121,6 @@ const theme = extendTheme({
       textTransform: "uppercase",
       fontWeight: "700",
       fontSize: "15px",
-<<<<<<< HEAD
-=======
-      height: "35px",
->>>>>>> 5dec161faafb52b1f2e014376e43e3cc939cac1f
       width: "100%",
     },
   },
