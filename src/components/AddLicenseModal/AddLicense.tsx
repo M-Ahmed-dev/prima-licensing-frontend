@@ -1,12 +1,14 @@
 import { Box, Text, useTheme } from "@chakra-ui/react";
 import React from "react";
-import AddSectionOne from "./AddSectionOne";
-import AddSectionThree from "./AddSectionThree";
-import AddSectionTwo from "./AddSectionTwo";
+import DomainSection from "./DomainSection";
+
 import ModalButtons from "./ModalButtons";
+import NoteSection from "./NoteSection";
+
 import CompanyContacts from "./OptionSelectors/CompanyContacts";
-import TagsSelect from "./OptionSelectors/TagsSelect";
+import ContactTags from "./OptionSelectors/ContactTags";
 import TutorSelect from "./OptionSelectors/TutorSelect";
+import StartDateSection from "./StartDateSection";
 
 interface Props {
   handleClick: () => void;
@@ -32,7 +34,7 @@ const AddLicense: React.FC<Props> = ({ handleClick }) => {
             <TutorSelect />
             <CompanyContacts />
           </Box>
-          <TagsSelect />
+          <ContactTags />
         </Box>
 
         <Box padding="30px" width="100%" borderLeft="3px solid #39808B">
@@ -41,11 +43,12 @@ const AddLicense: React.FC<Props> = ({ handleClick }) => {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "self-start",
+              flexWrap: "wrap",
             }}
           >
-            <AddSectionOne />
-            <AddSectionTwo />
-            <AddSectionThree />
+            <DomainSection />
+            <StartDateSection />
+            <NoteSection />
           </Box>
 
           <ModalButtons handleClick={handleClick} />
