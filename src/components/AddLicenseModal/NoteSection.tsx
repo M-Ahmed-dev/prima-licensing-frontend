@@ -10,7 +10,7 @@ import React from "react";
 import DemoToggle from "../ToggleSwitch/DemoToggle";
 import SellEnvToggle from "../ToggleSwitch/SellEnvToggle";
 
-const AddSectionThree: React.FC = () => {
+const NoteSection: React.FC = () => {
   const theme = useTheme();
 
   const SelectStyles = {
@@ -52,4 +52,4 @@ const AddSectionThree: React.FC = () => {
   );
 };
 
-export default AddSectionThree;
+export default NoteSection;

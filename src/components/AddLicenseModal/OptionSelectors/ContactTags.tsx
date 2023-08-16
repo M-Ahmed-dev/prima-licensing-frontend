@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 
-const TagsSelect: React.FC = () => {
+const ContactTags: React.FC = () => {
   const theme = useTheme();
 
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -22,7 +22,10 @@ const TagsSelect: React.FC = () => {
   };
 
   const handleTagClose = (tag: string) => {
-    setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
+    const updatedTags = selectedTags.filter(
+      (selectedTag) => selectedTag !== tag
+    );
+    setSelectedTags(updatedTags);
   };
 
   return (
@@ -30,6 +33,7 @@ const TagsSelect: React.FC = () => {
       <Text mb="7px" sx={theme.fonts.subHeading}>
         Contact Tags
       </Text>
+
       <Select
         sx={{
           borderRadius: "none",
@@ -40,11 +44,10 @@ const TagsSelect: React.FC = () => {
         onChange={handleContactChange}
         value=""
       >
-        <option value="Newbicom">Newbicom</option>
-        <option value="Tutors">Tutors</option>
         <option value="Maxenius">Maxenius</option>
+        <option value="Bolt">Bolt</option>
+        <option value="Newbicon">Newbicon</option>
       </Select>
-
       {selectedTags.length > 0 && (
         <Box display="flex" mt="10px" gap="5px" flexWrap="wrap" width="300px">
           {selectedTags.map((tag) => (
@@ -64,4 +67,4 @@ const TagsSelect: React.FC = () => {
   );
 };
 
-export default TagsSelect;
+export default ContactTags;

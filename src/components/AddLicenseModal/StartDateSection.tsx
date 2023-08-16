@@ -1,7 +1,8 @@
 import { Box, FormLabel, useTheme, Select, Text } from "@chakra-ui/react";
 import React from "react";
+import EmailTags from "./OptionSelectors/EmailTags";
 
-const AddSectionTwo: React.FC = () => {
+const StartDateSection: React.FC = () => {
   const theme = useTheme();
 
   const SelectStyles = {
@@ -31,15 +32,9 @@ const AddSectionTwo: React.FC = () => {
       </Box>
 
       <Box>
-        <Text sx={theme.fonts.subHeading} marginBottom="10px" marginTop="30px">
-          Email reminder of expiration
-        </Text>
-        <Select width="222px" sx={SelectStyles} placeholder="Expiry Date">
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </Select>
+        <EmailTags />
       </Box>
+
       <Box>
         <Text sx={theme.fonts.subHeading} marginBottom="10px" marginTop="30px">
           Email reminder template
@@ -59,4 +54,4 @@ const AddSectionTwo: React.FC = () => {
   );
 };
 
-export default AddSectionTwo;
+export default StartDateSection;

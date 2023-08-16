@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const AddSectionOne: React.FC = () => {
+const DomainSection: React.FC = () => {
   const theme = useTheme();
 
   const SelectStyles = {
@@ -69,4 +69,4 @@ const AddSectionOne: React.FC = () => {
   );
 };
 
-export default AddSectionOne;
+export default DomainSection;

@@ -9,6 +9,7 @@ import {
   Tr,
   useTheme,
   Icon,
+  RadioGroup,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 
@@ -16,9 +17,14 @@ const CompanyContacts: React.FC = () => {
   const theme = useTheme();
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedValue, setSelectedValue] = useState<string>(" ");
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedValue(event.target.value);
   };
 
   const checkBoxStyle = {
@@ -36,8 +42,15 @@ const CompanyContacts: React.FC = () => {
     },
   };
 
+  const checkboxData = ["Pekka Kussi", "Antero Heino", "Matti Meikäläinen"];
+
   return (
-    <>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <Table
         sx={{
           border: `3px solid ${theme.colors.secondary}`,
@@ -75,9 +88,14 @@ const CompanyContacts: React.FC = () => {
               },
             }}
           >
-            <Tr>
+            {/* <Tr>
               <Box padding="7px 10px">
-                <Checkbox marginInlineStart="none" sx={checkBoxStyle}>
+                <Checkbox
+                  onChange={handleChange}
+                  marginInlineStart="none"
+                  sx={checkBoxStyle}
+                  value={"Pekka Kussi"}
+                >
                   Pekka Kussi
                 </Checkbox>
               </Box>
@@ -88,11 +106,33 @@ const CompanyContacts: React.FC = () => {
                   Antero Heino
                 </Checkbox>
               </Box>
-            </Tr>
+            </Tr> */}
+            {checkboxData.map((name, index) => (
+              <Tr key={index}>
+                <RadioGroup padding="7px 10px">
+                  <Checkbox
+                    onChange={handleChange}
+                    marginInlineStart="none"
+                    sx={checkBoxStyle}
+                    value={name}
+                  >
+                    {name}
+                  </Checkbox>
+                </RadioGroup>
+              </Tr>
+            ))}
           </Tbody>
         )}
       </Table>
-    </>
+
+      <Box>
+        {selectedValue && (
+          <Box marginTop="10px" padding="7px 10px">
+            {selectedValue}
+          </Box>
+        )}
+      </Box>
+    </Box>
   );
 };
 
