@@ -19,6 +19,8 @@ import ShowPlugin from "./components/PluginsTab/AddNewPlugin/ShowPlugin";
 import PrimaTable from "./components/PrimaIntegrationTable/PrimaTable";
 import Settings from "./components/SettingsTab/Settings";
 import Login from "./components/Login/Login";
+import { useIsAuthenticated } from "@azure/msal-react";
+// import { useIsAuthenticated } from "@azure/msal-react";
 
 function App() {
   const theme = useTheme();
@@ -47,19 +49,21 @@ function App() {
     marginLeft: "auto",
   };
 
-  const [isAuth, setIsAuth] = React.useState(false);
+  // const [isAuth, setIsAuth] = React.useState(false);
 
-  React.useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token) {
-      setIsAuth(true);
-    }
-  }, []);
+  // React.useEffect(() => {
+  //   const token = localStorage.getItem("token");
+  //   if (token) {
+  //     setIsAuth(true);
+  //   }
+  // }, []);
+
+  const isAuthenticated = useIsAuthenticated();
 
   return (
     <>
       <Router>
-        {!isAuth ? (
+        {isAuthenticated ? (
           <Layout>
             <Tabs variant="unstyled">
               <TabList>

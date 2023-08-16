@@ -1,12 +1,29 @@
-import { Box, Text, useTheme } from "@chakra-ui/react";
+import { Box, Button, Text, useTheme } from "@chakra-ui/react";
 import React from "react";
 
 import bgImage from "../../assets/bgImage.png";
 import AppLogin from "../../assets/AppLogin.png";
-import MicrosoftLoginButton from "./MicroSoftLoginButton";
+
+import { useMsal } from "@azure/msal-react";
+import { loginRequest } from "../../configure";
 
 const Login: React.FC = () => {
   const theme = useTheme();
+
+  const { instance } = useMsal();
+
+  const handleLogin = (loginType: string) => {
+    if (loginType === "popup") {
+      instance.loginPopup(loginRequest).catch((e) => {
+        console.log(e);
+      });
+    } else if (loginType === "redirect") {
+      instance.loginRedirect(loginRequest).catch((e) => {
+        console.log(e);
+      });
+    }
+  };
+
   return (
     <>
       <Box
@@ -44,7 +61,9 @@ const Login: React.FC = () => {
             >
               Welcome to TuLicense!
             </Text>
-            <MicrosoftLoginButton />
+            <Button onClick={() => handleLogin("redirect")}>
+              Login with Microsoft
+            </Button>
           </Box>
         </Box>
       </Box>
