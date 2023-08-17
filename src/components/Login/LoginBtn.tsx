@@ -15,6 +15,14 @@ const LoginBtn: React.FC = () => {
       console.log(e);
     });
   };
+
+  // useEffect(() => {
+  //   // Attempt automatic login when component mounts
+  //   instance.loginRedirect(loginRequest).catch((e) => {
+  //     console.log(e);
+  //   });
+  // }, [instance]);
+
   return (
     <>
       <Box display="flex" justifyContent="center">
