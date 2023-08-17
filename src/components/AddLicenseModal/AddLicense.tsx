@@ -1,14 +1,13 @@
 import { Box, Text, useTheme } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import DomainSection from "./DomainSection";
 
 import ModalButtons from "./ModalButtons";
 import NoteSection from "./NoteSection";
 
-import CompanyContacts from "./OptionSelectors/CompanyContacts";
-import ContactTags from "./OptionSelectors/ContactTags";
-import TutorSelect from "./OptionSelectors/TutorSelect";
 import StartDateSection from "./StartDateSection";
+import DropDownSelector from "./DropDownSelector/DropDownSelector";
+import ContactTags from "./ContactTags";
 
 interface Props {
   handleClick: () => void;
@@ -16,6 +15,20 @@ interface Props {
 
 const AddLicense: React.FC<Props> = ({ handleClick }) => {
   const theme = useTheme();
+
+  const [selectedValue, setSelectedValue] = useState("");
+  const [selectedTutor, setSelectedTutor] = useState("");
+
+  const checkboxData = ["Pekka Kussi", "Antero Heino", "Matti Meikäläinen"];
+  const tutorNames = ["Annuka Hupli", "Filipa Howard", "Eisenberg Stewart"];
+
+  const handleSelect = (selected: string) => {
+    setSelectedValue(selected);
+  };
+
+  const handleTutorSelect = (selected: string) => {
+    setSelectedTutor(selected);
+  };
 
   const boxStyles = {
     border: "3px solid #39808B",
@@ -31,8 +44,21 @@ const AddLicense: React.FC<Props> = ({ handleClick }) => {
           </Text>
 
           <Box display="flex" gap="20px" mt="38px" alignItems="self-start">
-            <TutorSelect />
-            <CompanyContacts />
+            {/*  */}
+            <DropDownSelector
+              data={tutorNames}
+              onSelect={handleTutorSelect}
+              selectedValue={selectedTutor}
+              selectName="Tutor"
+            />
+
+            {/*  */}
+            <DropDownSelector
+              data={checkboxData}
+              onSelect={handleSelect}
+              selectedValue={selectedValue}
+              selectName="Company Contacts"
+            />
           </Box>
           <ContactTags />
         </Box>
