@@ -12,6 +12,7 @@ import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider } from "@azure/msal-react";
 
 import { msalConfig } from "./configure";
+import Layout from "./Layout/Layout";
 
 const pca = new PublicClientApplication(msalConfig);
 
@@ -19,7 +20,9 @@ root.render(
   <React.StrictMode>
     <MsalProvider instance={pca}>
       <ChakraProvider theme={theme}>
-        <App />
+        <Layout>
+          <App />
+        </Layout>
       </ChakraProvider>
     </MsalProvider>
   </React.StrictMode>

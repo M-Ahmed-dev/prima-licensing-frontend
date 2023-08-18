@@ -1,6 +1,5 @@
 import { Box, TabPanel } from "@chakra-ui/react";
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import ShowPlugin from "../PluginsTab/AddNewPlugin/ShowPlugin";
 import ShowNewUpdate from "../PluginsTab/ShowNewUpdate";
 
@@ -16,32 +15,23 @@ const HomeTabPanel: React.FC = () => {
 
   return (
     <TabPanel bgImage={bgImage} sx={panel}>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Box display="flex" gap="30px" flexWrap="wrap">
-                <Box
-                  sx={{
-                    minWidth: "537px",
-                  }}
-                >
-                  <ShowNewUpdate />
-                </Box>
-                <Box
-                  sx={{
-                    flexGrow: 1,
-                    height: "100%",
-                  }}
-                >
-                  <ShowPlugin />
-                </Box>
-              </Box>
-            </>
-          }
-        />
-      </Routes>
+      <Box display="flex" gap="30px" flexWrap="wrap">
+        <Box
+          sx={{
+            minWidth: "537px",
+          }}
+        >
+          <ShowNewUpdate />
+        </Box>
+        <Box
+          sx={{
+            flexGrow: 1,
+            height: "100%",
+          }}
+        >
+          <ShowPlugin />
+        </Box>
+      </Box>
     </TabPanel>
   );
 };
