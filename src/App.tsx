@@ -4,7 +4,7 @@ import "./index.css";
 
 import Login from "./components/Login/Login";
 import { useIsAuthenticated } from "@azure/msal-react";
-import TabsComponent from "./components/Tabs/TabsComponent";
+import TabsComponent from "./components/TabsPanel/TabsComponent";
 
 function App() {
   const isAuthenticated = useIsAuthenticated();
