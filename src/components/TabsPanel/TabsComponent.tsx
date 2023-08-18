@@ -1,10 +1,12 @@
 import { Tabs, Tab, TabList, TabPanels, useTheme } from "@chakra-ui/react";
 import React from "react";
 
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomeTabPanel from "./HomeTabPanel";
 import SettingsTabPanel from "./SettingsTabPanel";
 import PrimaTablePanel from "./PrimaTablePanel";
+import PrivateRoute from "../Authentication/PrivateRouting";
+import Login from "../Login/Login";
 
 const TabsComponent: React.FC = () => {
   const theme = useTheme();
@@ -29,6 +31,33 @@ const TabsComponent: React.FC = () => {
   return (
     <>
       <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route
+            path="/"
+            element={
+              <PrivateRoute>
+                <HomeTabPanel />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/prima-integration"
+            element={
+              <PrivateRoute>
+                <PrimaTablePanel />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/settings"
+            element={
+              <PrivateRoute>
+                <SettingsTabPanel />
+              </PrivateRoute>
+            }
+          />
+        </Routes>
         <Tabs variant="unstyled">
           <TabList>
             <Link to="/">

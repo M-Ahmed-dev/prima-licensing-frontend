@@ -1,6 +1,5 @@
 import { TabPanel } from "@chakra-ui/react";
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import PrimaTable from "../PrimaIntegrationTable/PrimaTable";
 
 const PrimaTablePanel: React.FC = () => {
@@ -13,9 +12,7 @@ const PrimaTablePanel: React.FC = () => {
 
   return (
     <TabPanel sx={panel}>
-      <Routes>
-        <Route path="/prima-integration" element={<PrimaTable />} />
-      </Routes>
+      <PrimaTable />
     </TabPanel>
   );
 };

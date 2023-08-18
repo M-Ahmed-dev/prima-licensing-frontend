@@ -1,6 +1,5 @@
 import { TabPanel } from "@chakra-ui/react";
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import Settings from "../SettingsTab/Settings";
 
 import bgImage from "../../assets/bgImage.png";
@@ -15,9 +14,7 @@ const SettingsTabPanel: React.FC = () => {
   };
   return (
     <TabPanel bgImage={bgImage} sx={panel}>
-      <Routes>
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
+      <Settings />
     </TabPanel>
   );
 };

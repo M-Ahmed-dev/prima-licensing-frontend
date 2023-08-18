@@ -1,37 +1,20 @@
-import React, { useEffect, useState } from "react";
-import Layout from "./Layout/Layout";
+import React from "react";
 import "./index.css";
 
-import Login from "./components/Login/Login";
-import { useIsAuthenticated } from "@azure/msal-react";
+// import Login from "./components/Login/Login";
+// import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+// import HomeTabPanel from "./components/TabsPanel/HomeTabPanel";
+// import PrimaTablePanel from "./components/TabsPanel/PrimaTablePanel";
+// import SettingsTabPanel from "./components/TabsPanel/SettingsTabPanel";
+// import PrivateRoute from "./components/Authentication/PrivateRouting";
 import TabsComponent from "./components/TabsPanel/TabsComponent";
 
-function App() {
-  const isAuthenticated = useIsAuthenticated();
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate an asynchronous check for authentication status
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); // Adjust the delay as needed
-  }, []);
-
-  if (isLoading) {
-    return null; // or a loading spinner
-  }
-
+const App: React.FC = () => {
   return (
     <>
-      {isAuthenticated ? (
-        <Layout>
-          <TabsComponent />
-        </Layout>
-      ) : (
-        <Login />
-      )}
+      <TabsComponent />
     </>
   );
-}
+};
 
 export default App;
