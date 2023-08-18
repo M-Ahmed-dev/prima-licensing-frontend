@@ -1,10 +1,8 @@
 import { Box, Text, useTheme } from "@chakra-ui/react";
 import React, { useState } from "react";
 import DomainSection from "./DomainSection";
-
 import ModalButtons from "./ModalButtons";
 import NoteSection from "./NoteSection";
-
 import StartDateSection from "./StartDateSection";
 import DropDownSelector from "./DropDownSelector/DropDownSelector";
 import ContactTags from "./ContactTags";
@@ -44,7 +42,6 @@ const AddLicense: React.FC<Props> = ({ handleClick }) => {
           </Text>
 
           <Box display="flex" gap="20px" mt="38px" alignItems="self-start">
-            {/*  */}
             <DropDownSelector
               data={tutorNames}
               onSelect={handleTutorSelect}
@@ -52,7 +49,6 @@ const AddLicense: React.FC<Props> = ({ handleClick }) => {
               selectName="Tutor"
             />
 
-            {/*  */}
             <DropDownSelector
               data={checkboxData}
               onSelect={handleSelect}
