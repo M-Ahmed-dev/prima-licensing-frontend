@@ -15,7 +15,7 @@ export const msalConfig = {
     clientId: "63e3d507-2b93-4175-bf44-4355d17b73dc",
     authority: "https://login.microsoftonline.com/consumers",
     // redirectUri: "http://localhost:3000/",
-    redirectUri: "https://prima-licensing-frontend.vercel.app/",
+    redirectUri: "https://prima-licensing-frontend.vercel.app",
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
