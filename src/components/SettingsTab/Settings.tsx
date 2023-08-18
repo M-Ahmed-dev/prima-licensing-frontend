@@ -48,7 +48,7 @@ const Settings: React.FC = () => {
             <SettingsForm />
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+            <p>two</p>
           </TabPanel>
           <TabPanel>
             <p>two!</p>
