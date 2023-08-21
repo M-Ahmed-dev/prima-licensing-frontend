@@ -10,9 +10,10 @@ const LoginBtn: React.FC = () => {
   const theme = useTheme();
   const { instance } = useMsal();
 
-  const handleLogin = () => {
-    instance.loginRedirect(loginRequest).catch((e) => {
-      console.log(e);
+  const handleLogin = async() => {
+    console.log('ckiclekd')
+   await instance.loginRedirect(loginRequest).catch((e) => {
+      console.log(e.message);
     });
   };
 

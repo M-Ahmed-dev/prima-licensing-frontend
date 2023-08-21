@@ -26,10 +26,10 @@ const DataTableHeading: React.FC = () => {
           border: `3px solid ${theme.colors.secondaryLight}`,
         }}
       >
-        {data.TableHeading.map((item, index) => (
+        {data.TableHeading.map((item) => (
           <>
             <Tr
-              key={index} // Use index as the key, assuming TableHeading items won't change
+              key={item.licenseKey} // Use index as the key, assuming TableHeading items won't change
               sx={{
                 th: {
                   fontSize: "18px",

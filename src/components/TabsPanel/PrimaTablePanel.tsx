@@ -1,19 +1,31 @@
-import { TabPanel } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import React from "react";
-import PrimaTable from "../PrimaIntegrationTable/PrimaTable";
+import ShowNewUpdate from "../PluginsTab/ShowNewUpdate";
+import ShowPlugin from "../PluginsTab/AddNewPlugin/ShowPlugin";
 
 const PrimaTablePanel: React.FC = () => {
-  const panel = {
-    bgSize: "cover",
-    bgPosition: "center",
-    bgRepeat: "no-repeat",
-    padding: "33.5px",
-  };
+
 
   return (
-    <TabPanel sx={panel}>
-      <PrimaTable />
-    </TabPanel>
+    <>
+      <Box display="flex" gap="30px" flexWrap="wrap">
+        <Box
+          sx={{
+            minWidth: "537px",
+          }}
+        >
+          <ShowNewUpdate />
+        </Box>
+        <Box
+          sx={{
+            flexGrow: 1,
+            height: "100%",
+          }}
+        >
+          <ShowPlugin />
+        </Box>
+      </Box>
+    </>
   );
 };
 
