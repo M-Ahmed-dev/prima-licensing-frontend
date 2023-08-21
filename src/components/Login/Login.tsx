@@ -1,4 +1,4 @@
-import { useIsAuthenticated } from "@azure/msal-react";
+import { useIsAuthenticated, useMsal } from "@azure/msal-react";
 import { Box } from "@chakra-ui/react";
 import React from "react";
 import { Navigate } from "react-router-dom";
@@ -8,8 +8,9 @@ import LoginBtn from "./LoginBtn";
 
 const Login: React.FC = () => {
   const isAuthenticated = useIsAuthenticated();
+  const { inProgress } = useMsal()
 
-  if (isAuthenticated) {
+  if (isAuthenticated && inProgress === 'none') {
     return <Navigate to="/" />;
   }
 

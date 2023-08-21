@@ -5,6 +5,7 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
+  Box,
 } from "@chakra-ui/react";
 import React from "react";
 import SettingsOptions from "./SettingOptions";
@@ -28,7 +29,7 @@ const Settings: React.FC = () => {
   };
 
   return (
-    <>
+    <Box>
       <Tabs variant="enclosed">
         <TabList>
           <Tab sx={TabStyle} _selected={selected}>
@@ -55,7 +56,7 @@ const Settings: React.FC = () => {
           </TabPanel>
         </TabPanels>
       </Tabs>
-    </>
+    </Box>
   );
 };
 
