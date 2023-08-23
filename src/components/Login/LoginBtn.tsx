@@ -11,28 +11,20 @@ const LoginBtn: React.FC = () => {
   const { instance } = useMsal();
 
   const handleLogin = async() => {
-    console.log('ckiclekd')
    await instance.loginRedirect(loginRequest).catch((e) => {
       console.log(e.message);
     });
   };
 
-  // useEffect(() => {
-  //   // Attempt automatic login when component mounts
-  //   instance.loginRedirect(loginRequest).catch((e) => {
-  //     console.log(e);
-  //   });
-  // }, [instance]);
-
   return (
     <>
-      <Box display="flex" justifyContent="center">
-        <img src={AppLogin} alt="" />
+      <Box display='flex' justifyContent='center'>
+        <img src={AppLogin} alt='' />
       </Box>
 
-      <Box display="flex" justifyContent="center">
+      <Box display='flex' justifyContent='center'>
         <Box
-          mt="79px"
+          mt='79px'
           sx={{
             border: `3px solid ${theme.colors.darkGray}`,
             width: "695px",
@@ -53,7 +45,7 @@ const LoginBtn: React.FC = () => {
             Welcome to TuLicense!
           </Text>
           <Button
-            mt="50px"
+            mt='50px'
             sx={{
               borderRadius: "5px",
               border: `2px solid #cacfd6`,
@@ -70,7 +62,7 @@ const LoginBtn: React.FC = () => {
             }}
             onClick={handleLogin}
           >
-            <img src={Microsoft} alt="MicroSoft Login" />
+            <img src={Microsoft} alt='MicroSoft Login' />
             Continue with Microsoft Account
           </Button>
         </Box>

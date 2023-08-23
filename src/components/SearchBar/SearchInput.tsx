@@ -15,7 +15,7 @@ const SearchInput: React.FC = () => {
     <>
       <Box>
         <InputGroup>
-          <InputLeftElement pointerEvents="none">
+          <InputLeftElement pointerEvents='none'>
             <SearchIcon
               sx={{
                 color: theme.colors.secondaryLight,
@@ -35,9 +35,9 @@ const SearchInput: React.FC = () => {
                 color: theme.colors.secondary,
               },
             }}
-            width="403px"
-            type="search"
-            placeholder="Search from 78 Licenses"
+            width='403px'
+            type='search'
+            placeholder='Search from 78 Licenses'
           />
         </InputGroup>
       </Box>

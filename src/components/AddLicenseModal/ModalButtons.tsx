@@ -10,18 +10,18 @@ const ModalButtons: React.FC<Props> = ({ handleClick }) => {
 
   return (
     <>
-      <Box display="flex" gap="20px" alignItems="end" justifyContent="flex-end">
+      <Box display='flex' gap='20px' alignItems='end' justifyContent='flex-end'>
         <Button
-          maxWidth="207px"
+          maxWidth='207px'
           onClick={handleClick}
           sx={theme.buttons.discardSm}
         >
           Discard
         </Button>
         <Button
-          maxWidth="207px"
+          maxWidth='207px'
           onClick={handleClick}
-          mt="11px"
+          mt='11px'
           sx={theme.buttons.primarySmall}
         >
           Add License

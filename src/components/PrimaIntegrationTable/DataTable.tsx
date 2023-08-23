@@ -9,10 +9,10 @@ const DataTable: React.FC = () => {
     <>
       <TableContainer>
         <Table
-          variant="unstyled"
-          mt="20px"
-          fontFamily="Inter"
-          fontStyle="normal"
+          variant='unstyled'
+          mt='20px'
+          fontFamily='Inter'
+          fontStyle='normal'
         >
           <DataTableHeading />
           <DataTableBody />

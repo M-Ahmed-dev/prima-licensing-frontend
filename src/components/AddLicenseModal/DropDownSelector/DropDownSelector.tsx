@@ -47,7 +47,7 @@ const DropDownSelector: React.FC<DropDownSelectorProps> = ({
 
       <Box>
         {selectedValue && (
-          <Box marginTop="10px" padding="7px 10px">
+          <Box marginTop='10px' padding='7px 10px'>
             {selectedValue}
           </Box>
         )}

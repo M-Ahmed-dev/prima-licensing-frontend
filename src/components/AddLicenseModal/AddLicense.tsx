@@ -36,30 +36,30 @@ const AddLicense: React.FC<Props> = ({ handleClick }) => {
   return (
     <>
       <Box sx={boxStyles}>
-        <Box height="100%" padding="35px">
-          <Text color={theme.colors.secondary} fontSize="25px" fontWeight="700">
+        <Box height='100%' padding='35px'>
+          <Text color={theme.colors.secondary} fontSize='25px' fontWeight='700'>
             Contacts
           </Text>
 
-          <Box display="flex" gap="20px" mt="38px" alignItems="self-start">
+          <Box display='flex' gap='20px' mt='38px' alignItems='self-start'>
             <DropDownSelector
               data={tutorNames}
               onSelect={handleTutorSelect}
               selectedValue={selectedTutor}
-              selectName="Tutor"
+              selectName='Tutor'
             />
 
             <DropDownSelector
               data={checkboxData}
               onSelect={handleSelect}
               selectedValue={selectedValue}
-              selectName="Company Contacts"
+              selectName='Company Contacts'
             />
           </Box>
           <ContactTags />
         </Box>
 
-        <Box padding="30px" width="100%" borderLeft="3px solid #39808B">
+        <Box padding='30px' width='100%' borderLeft='3px solid #39808B'>
           <Box
             sx={{
               display: "flex",

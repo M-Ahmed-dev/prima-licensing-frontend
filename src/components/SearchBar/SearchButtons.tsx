@@ -14,7 +14,7 @@ const SearchButtons: React.FC<SearchButtonsProps> = ({ handleClick }) => {
   };
 
   return (
-    <Box marginLeft="auto" display="flex" alignItems="center" gap="11px">
+    <Box marginLeft='auto' display='flex' alignItems='center' gap='11px'>
       <Button
         sx={{
           ...theme.buttons.secondarySmall,
@@ -34,7 +34,7 @@ const SearchButtons: React.FC<SearchButtonsProps> = ({ handleClick }) => {
         Export CSV
       </Button>
       <Button
-        width="100%"
+        width='100%'
         sx={{ ...theme.buttons.primarySmall, ...basicButtonStyles }}
         onClick={handleClick}
       >

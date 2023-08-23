@@ -20,31 +20,31 @@ const NoteSection: React.FC = () => {
   };
 
   return (
-    <Box maxWidth="522px" width="100%">
+    <Box maxWidth='522px' width='100%'>
       <Box>
         <FormLabel sx={theme.fonts.subHeading}>Notes</FormLabel>
         <Textarea
-          placeholder="name"
+          placeholder='name'
           color={theme.colors.secondary}
-          fontWeight="500"
-          border="3px solid"
-          height="60px"
-          borderRadius="none"
-          width="100%"
+          fontWeight='500'
+          border='3px solid'
+          height='60px'
+          borderRadius='none'
+          width='100%'
         />
       </Box>
-      <Box maxWidth="217px" width="100%">
-        <Text sx={theme.fonts.subHeading} marginBottom="10px" marginTop="30px">
+      <Box maxWidth='217px' width='100%'>
+        <Text sx={theme.fonts.subHeading} marginBottom='10px' marginTop='30px'>
           Premium Type
         </Text>
-        <Select sx={SelectStyles} placeholder="Start Date">
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+        <Select sx={SelectStyles} placeholder='Start Date'>
+          <option value='option1'>Option 1</option>
+          <option value='option2'>Option 2</option>
+          <option value='option3'>Option 3</option>
         </Select>
       </Box>
 
-      <Box mt="50px">
+      <Box mt='50px'>
         <DemoToggle />
         <SellEnvToggle />
       </Box>

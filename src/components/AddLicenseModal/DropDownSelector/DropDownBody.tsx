@@ -38,10 +38,10 @@ const DropdownBody: React.FC<TableBodyProps> = ({ data, onSelect }) => {
     >
       {data.map((name, index) => (
         <Tr key={index}>
-          <RadioGroup padding="7px 10px">
+          <RadioGroup padding='7px 10px'>
             <Checkbox
               onChange={handleChange}
-              marginInlineStart="none"
+              marginInlineStart='none'
               sx={checkBoxStyle}
               value={name}
             >

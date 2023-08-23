@@ -29,7 +29,7 @@ const VersionHistory: React.FC = () => {
 
   return (
     <>
-      <Text mt="17px" sx={theme.fonts.subHeading}>
+      <Text mt='17px' sx={theme.fonts.subHeading}>
         Version History
       </Text>
 
@@ -37,48 +37,48 @@ const VersionHistory: React.FC = () => {
         <>
           <Box
             key={index}
-            mt="16px"
+            mt='16px'
             sx={{
               border: `3px solid ${theme.colors.secondary}`,
               padding: "11px 14px",
               maxWidth: "471px",
             }}
           >
-            <Box display="flex" justifyContent="space-between">
+            <Box display='flex' justifyContent='space-between'>
               <Text
-                fontFamily="Inter"
-                fontWeight="700"
+                fontFamily='Inter'
+                fontWeight='700'
                 sx={theme.fonts.tealParagraph}
               >
                 {boxData.version}
               </Text>
               <Text
-                textTransform="uppercase"
-                fontWeight="700"
-                fontSize="16px"
-                fontFamily="Inter"
+                textTransform='uppercase'
+                fontWeight='700'
+                fontSize='16px'
+                fontFamily='Inter'
                 sx={theme.fonts.tealParagraph}
               >
                 {boxData.versionStatus}
               </Text>
             </Box>
             <Text
-              fontFamily="Inter"
-              fontWeight="600"
+              fontFamily='Inter'
+              fontWeight='600'
               sx={theme.fonts.tealParagraph}
             >
               {boxData.date}
             </Text>
-            <UnorderedList mt="10px" ml="20px" sx={theme.fonts.unorderedList}>
+            <UnorderedList mt='10px' ml='20px' sx={theme.fonts.unorderedList}>
               {boxData.changes.map((change, i) => (
                 <ListItem key={i}>{change}</ListItem>
               ))}
             </UnorderedList>
-            <Box display="flex" gap="10px" mt="16px">
+            <Box display='flex' gap='10px' mt='16px'>
               <Button sx={theme.buttons.primarySmall}>Download</Button>
               <Button
-                border="3px solid #39808B"
-                textTransform="uppercase"
+                border='3px solid #39808B'
+                textTransform='uppercase'
                 sx={theme.buttons.secondarySmall}
               >
                 Edit version
@@ -87,7 +87,7 @@ const VersionHistory: React.FC = () => {
           </Box>
         </>
       ))}
-      <Box mt="11px">
+      <Box mt='11px'>
         <Link sx={theme.fonts.tealParagraph}>Show more</Link>
       </Box>
     </>

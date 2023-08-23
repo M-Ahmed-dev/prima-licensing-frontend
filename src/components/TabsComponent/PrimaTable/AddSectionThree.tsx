@@ -38,47 +38,47 @@ const AddSectionThree: React.FC = () => {
   };
 
   return (
-    <Box maxWidth="530px" width="100%">
+    <Box maxWidth='530px' width='100%'>
       <Box>
         <FormLabel sx={theme.fonts.subHeading}>Notes</FormLabel>
         <Textarea
-          placeholder="name"
+          placeholder='name'
           color={theme.colors.secondary}
-          fontWeight="500"
-          border="3px solid"
-          width="522px"
+          fontWeight='500'
+          border='3px solid'
+          width='522px'
         />
       </Box>
-      <Box maxWidth="217px" width="100%">
-        <Text sx={theme.fonts.subHeading} marginBottom="10px" marginTop="30px">
+      <Box maxWidth='217px' width='100%'>
+        <Text sx={theme.fonts.subHeading} marginBottom='10px' marginTop='30px'>
           Premium Type
         </Text>
-        <Select sx={SelectStyles} placeholder="Start Date">
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+        <Select sx={SelectStyles} placeholder='Start Date'>
+          <option value='option1'>Option 1</option>
+          <option value='option2'>Option 2</option>
+          <option value='option3'>Option 3</option>
         </Select>
       </Box>
 
-      <Box mt="50px">
+      <Box mt='50px'>
         <Box>
-          <FormControl display="flex" justifyContent="space-between">
+          <FormControl display='flex' justifyContent='space-between'>
             <FormLabel sx={theme.fonts.subHeading}>Demo</FormLabel>
             <Switch
               isChecked={isSwitchOn}
               onChange={handleSwitchChange}
-              size="md"
+              size='md'
               sx={SwitchStyles}
             />
           </FormControl>
         </Box>
         <Box>
-          <FormControl display="flex" justifyContent="space-between">
+          <FormControl display='flex' justifyContent='space-between'>
             <FormLabel sx={theme.fonts.subHeading}>Sell environment</FormLabel>
             <Switch
               isChecked={isSwitchOn}
               onChange={handleSwitchChange}
-              size="md"
+              size='md'
               sx={SwitchStyles}
             />
           </FormControl>

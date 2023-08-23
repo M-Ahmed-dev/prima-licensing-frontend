@@ -29,12 +29,12 @@ const SellEnvToggle: React.FC = () => {
 
   return (
     <Box>
-      <FormControl display="flex" justifyContent="space-between">
+      <FormControl display='flex' justifyContent='space-between'>
         <FormLabel sx={theme.fonts.subHeading}>Sell environment</FormLabel>
         <Switch
           isChecked={isSwitchOn}
           onChange={handleSellEnv}
-          size="md"
+          size='md'
           sx={SwitchStyles}
         />
       </FormControl>

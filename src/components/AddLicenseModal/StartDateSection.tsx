@@ -13,20 +13,20 @@ const StartDateSection: React.FC = () => {
 
   return (
     <Box>
-      <Box width="222px">
-        <Text sx={theme.fonts.subHeading} marginBottom="10px">
+      <Box width='222px'>
+        <Text sx={theme.fonts.subHeading} marginBottom='10px'>
           Start Date
         </Text>
-        <Select sx={SelectStyles} placeholder="Select option">
-          <option value="option1">Option 1</option>
+        <Select sx={SelectStyles} placeholder='Select option'>
+          <option value='option1'>Option 1</option>
 
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+          <option value='option2'>Option 2</option>
+          <option value='option3'>Option 3</option>
         </Select>
       </Box>
 
       <Box>
-        <FormLabel marginTop="30px" sx={theme.fonts.subHeading}>
+        <FormLabel marginTop='30px' sx={theme.fonts.subHeading}>
           Expiration Date
         </FormLabel>
         <Text>-</Text>
@@ -37,18 +37,18 @@ const StartDateSection: React.FC = () => {
       </Box>
 
       <Box>
-        <Text sx={theme.fonts.subHeading} marginBottom="10px" marginTop="30px">
+        <Text sx={theme.fonts.subHeading} marginBottom='10px' marginTop='30px'>
           Email reminder template
         </Text>
         <Select
-          variant="outline"
-          width="222px"
+          variant='outline'
+          width='222px'
           sx={SelectStyles}
-          placeholder="Expiry Date"
+          placeholder='Expiry Date'
         >
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+          <option value='option1'>Option 1</option>
+          <option value='option2'>Option 2</option>
+          <option value='option3'>Option 3</option>
         </Select>
       </Box>
     </Box>

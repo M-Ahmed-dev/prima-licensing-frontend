@@ -11,7 +11,7 @@ const Login: React.FC = () => {
   const { inProgress } = useMsal()
 
   if (isAuthenticated && inProgress === 'none') {
-    return <Navigate to="/" />;
+    return <Navigate to='/' />;
   }
 
   return (

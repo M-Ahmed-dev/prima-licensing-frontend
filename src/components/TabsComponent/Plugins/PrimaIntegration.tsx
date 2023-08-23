@@ -9,9 +9,9 @@ const PrimaIntegration: React.FC = () => {
     <>
       <Text sx={theme.fonts.h1}>prima integration</Text>
       <Text>
-        Version <span style={{ fontWeight: "600" }}>2.2.5</span>
+        Version <span style={{ fontWeight: "600" }}>2.2.50</span>
       </Text>
-      <Box mt="20px">
+      <Box mt='20px'>
         <ToggleSwitch />
       </Box>
     </>

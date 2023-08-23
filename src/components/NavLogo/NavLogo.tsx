@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 const NavLogo: React.FC = () => {
   return (
     <>
-      <img src={logo} alt="NavLogo" />
+      <img src={logo} alt='NavLogo' />
     </>
   );
 };
