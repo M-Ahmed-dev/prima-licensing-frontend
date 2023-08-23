@@ -29,12 +29,12 @@ const DemoToggle: React.FC = () => {
   };
   return (
     <Box>
-      <FormControl display="flex" justifyContent="space-between">
+      <FormControl display='flex' justifyContent='space-between'>
         <FormLabel sx={theme.fonts.subHeading}>Demo</FormLabel>
         <Switch
           isChecked={isDemoOn}
           onChange={handleDemoSwitch}
-          size="md"
+          size='md'
           sx={SwitchStyles}
         />
       </FormControl>

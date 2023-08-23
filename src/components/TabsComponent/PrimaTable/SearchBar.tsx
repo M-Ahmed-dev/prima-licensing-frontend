@@ -24,14 +24,14 @@ const Searchbar: React.FC = () => {
         <AddLicense handleClick={handleClick} />
       ) : (
         <Box
-          display="flex"
-          alignItems="center"
-          border="3px solid #39808B"
-          padding="13px 26px"
+          display='flex'
+          alignItems='center'
+          border='3px solid #39808B'
+          padding='13px 26px'
         >
           <Box>
             <InputGroup>
-              <InputLeftElement pointerEvents="none">
+              <InputLeftElement pointerEvents='none'>
                 <SearchIcon
                   sx={{
                     color: theme.colors.secondaryLight,
@@ -51,38 +51,38 @@ const Searchbar: React.FC = () => {
                     color: theme.colors.secondary,
                   },
                 }}
-                width="403px"
-                type="search"
-                placeholder="Search from 78 Licenses"
+                width='403px'
+                type='search'
+                placeholder='Search from 78 Licenses'
               />
             </InputGroup>
           </Box>
           {/*  */}
-          <Box marginLeft="auto" display="flex" alignItems="center" gap="11px">
+          <Box marginLeft='auto' display='flex' alignItems='center' gap='11px'>
             <Button
-              maxWidth="200px"
+              maxWidth='200px'
               sx={theme.buttons.secondarySmall}
-              height="41px"
-              fontSize="18px"
-              padding="20px"
+              height='41px'
+              fontSize='18px'
+              padding='20px'
             >
               Show Demos
             </Button>
             <Button
-              maxWidth="200px"
-              fontSize="18px"
+              maxWidth='200px'
+              fontSize='18px'
               sx={theme.buttons.secondarySmall}
-              height="41px"
-              padding="20px"
+              height='41px'
+              padding='20px'
             >
               Export CSV
             </Button>
             <Button
-              maxWidth="200px"
-              fontSize="18px"
+              maxWidth='200px'
+              fontSize='18px'
               sx={theme.buttons.primarySmall}
-              height="43px"
-              padding="21px"
+              height='43px'
+              padding='21px'
               onClick={handleClick}
             >
               Add License

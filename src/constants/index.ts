@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://license-api.tutors.fi/api'

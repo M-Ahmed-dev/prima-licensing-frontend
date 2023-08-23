@@ -30,7 +30,7 @@ const Settings: React.FC = () => {
 
   return (
     <Box>
-      <Tabs variant="enclosed">
+      <Tabs variant='enclosed'>
         <TabList>
           <Tab sx={TabStyle} _selected={selected}>
             Email Reminders

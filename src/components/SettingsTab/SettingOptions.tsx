@@ -37,11 +37,11 @@ const SettingsOptions: React.FC = () => {
   ];
 
   return (
-    <Box mt="73px" display="flex" gap="10px" alignItems="center">
+    <Box mt='73px' display='flex' gap='10px' alignItems='center'>
       {buttonConfigurations.map((config, index) => (
         <Button
           key={index}
-          height="48px"
+          height='48px'
           {...config} // Spread the configuration properties
         >
           {config.text}

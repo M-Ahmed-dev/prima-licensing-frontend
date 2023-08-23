@@ -1,7 +1,7 @@
 import { Box, useTheme } from "@chakra-ui/react";
 import React, { useState } from "react";
 import PrimaIntegration from "./PrimaIntegration";
-import PrimaList from "./PrimaList";
+import PrimaList from "../../Plugins/ListPlugin/VersionsHistory";
 import UpdateForm from "./UpdateForm";
 
 const ShowNewUpdate: React.FC = () => {
@@ -22,9 +22,9 @@ const ShowNewUpdate: React.FC = () => {
 
   return (
     <Box
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
+      display='flex'
+      flexDirection='column'
+      justifyContent='space-between'
       sx={BoxStyles}
     >
       {showNewUpdate ? (

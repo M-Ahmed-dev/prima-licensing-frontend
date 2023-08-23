@@ -14,19 +14,24 @@ import { MsalProvider } from "@azure/msal-react";
 
 import { msalConfig } from "./configure";
 import Layout from "./Layout/Layout";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const pca = new PublicClientApplication(msalConfig);
 
+const queryClient = new QueryClient({})
+
 root.render(
   <React.StrictMode>
-    <Router>
-      <MsalProvider instance={pca}>
-        <ChakraProvider theme={theme}>
-          <Layout>
-            <App />
-          </Layout>
-        </ChakraProvider>
-      </MsalProvider>
-    </Router>
+    <QueryClientProvider client={queryClient}>
+      <Router>
+        <MsalProvider instance={pca}>
+          <ChakraProvider theme={theme}>
+            <Layout>
+              <App />
+            </Layout>
+          </ChakraProvider>
+        </MsalProvider>
+      </Router>
+    </QueryClientProvider>
   </React.StrictMode>
 );

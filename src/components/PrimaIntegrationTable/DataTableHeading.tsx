@@ -41,7 +41,7 @@ const DataTableHeading: React.FC = () => {
               }}
             >
               <Th>
-                <Checkbox sx={checkBoxStyle} size="lg">
+                <Checkbox sx={checkBoxStyle} size='lg'>
                   Domain / Website
                   <ChevronDownIcon />
                 </Checkbox>
@@ -110,7 +110,7 @@ const DataTableHeading: React.FC = () => {
           </>
         ))}
       </Thead>
-      <Box padding="5px"></Box>
+      <Box padding='5px'></Box>
     </>
   );
 };

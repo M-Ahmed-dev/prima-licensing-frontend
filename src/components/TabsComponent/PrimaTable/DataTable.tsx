@@ -48,7 +48,7 @@ const DataTable: React.FC = () => {
     return data.plugins.map((item) => (
       <Tr key={item.sr}>
         <Td>
-          <Checkbox sx={checkBoxStyle} size="lg">
+          <Checkbox sx={checkBoxStyle} size='lg'>
             {item.domainWebsite}
           </Checkbox>
         </Td>
@@ -69,11 +69,11 @@ const DataTable: React.FC = () => {
   return (
     <>
       <TableContainer>
-        <Table variant="unstyled" mt="20px" sx={customTable}>
+        <Table variant='unstyled' mt='20px' sx={customTable}>
           <Thead>
             <Tr>
               <Th>
-                <Checkbox sx={checkBoxStyle} size="lg">
+                <Checkbox sx={checkBoxStyle} size='lg'>
                   Domain / Website
                   <ChevronDownIcon w={8} h={8} />
                 </Checkbox>

@@ -16,10 +16,10 @@ const SearchBar: React.FC = () => {
         <AddLicense handleClick={handleClick} />
       ) : (
         <Box
-          display="flex"
-          alignItems="center"
-          border="3px solid #39808B"
-          padding="13px 26px"
+          display='flex'
+          alignItems='center'
+          border='3px solid #39808B'
+          padding='13px 26px'
         >
           <SearchInput />
           <SearchButtons handleClick={handleClick} />

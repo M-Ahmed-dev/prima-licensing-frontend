@@ -1,28 +1,33 @@
 import { Box, Link, Text, useTheme } from "@chakra-ui/react";
 import React from "react";
 import PastUpdates from "./PastUpdates";
-import UpdatedList from "./UpdatedList";
+import { formatDate } from "../../../utils/formatDate";
+import { Plugin } from "../../../types/plugins";
+import Versionlist from "../ListPlugin/VersionList";
 
-const PrimaDescriptionList: React.FC = () => {
+interface IProps {
+  plugin: Plugin
+}
+const PrimaDescriptionList: React.FC<IProps> = ({ plugin }: IProps) => {
   const theme = useTheme();
   return (
     <>
-      <Box mt="24px">
+      <Box mt='24px'>
         <Text sx={theme.fonts.subHeading}>Created</Text>
-        <Text sx={theme.fonts.paragraph}>27.01.2022</Text>
+        <Text sx={theme.fonts.paragraph}>{formatDate(plugin.created_at)}</Text>
       </Box>
 
-      <Box mt="24px">
+      <Box mt='24px'>
         <Text sx={theme.fonts.subHeading}>Updated</Text>
-        <UpdatedList />
+        <Versionlist />
         <PastUpdates />
       </Box>
 
-      <Box mt="12px">
+      <Box mt='12px'>
         <Link
-          fontWeight="600"
-          fontFamily="Roboto"
-          fontSize="15px"
+          fontWeight='600'
+          fontFamily='Roboto'
+          fontSize='15px'
           color={theme.colors.secondaryLight}
         >
           Show all past updates

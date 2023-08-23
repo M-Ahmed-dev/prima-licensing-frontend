@@ -9,14 +9,14 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Box padding="30px">
+      <Box padding='30px'>
         {/* Header */}
         <Box>
           <NavLogo />
         </Box>
 
         {/* Main Content */}
-        <Box pt="13px">{children}</Box>
+        <Box pt='13px'>{children}</Box>
       </Box>
     </>
   );

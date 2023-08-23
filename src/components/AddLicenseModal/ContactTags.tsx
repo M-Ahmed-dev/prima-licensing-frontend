@@ -29,8 +29,8 @@ const ContactTags: React.FC = () => {
   };
 
   return (
-    <Box width="219px" mt="25px">
-      <Text mb="7px" sx={theme.fonts.subHeading}>
+    <Box width='219px' mt='25px'>
+      <Text mb='7px' sx={theme.fonts.subHeading}>
         Contact Tags
       </Text>
 
@@ -40,21 +40,21 @@ const ContactTags: React.FC = () => {
           border: "3px solid #39808B",
           color: theme.colors.secondary,
         }}
-        placeholder="No tags selected"
+        placeholder='No tags selected'
         onChange={handleContactChange}
-        value=""
+        value=''
       >
-        <option value="Maxenius">Maxenius</option>
-        <option value="Bolt">Bolt</option>
-        <option value="Newbicon">Newbicon</option>
+        <option value='Maxenius'>Maxenius</option>
+        <option value='Bolt'>Bolt</option>
+        <option value='Newbicon'>Newbicon</option>
       </Select>
       {selectedTags.length > 0 && (
-        <Box display="flex" mt="10px" gap="5px" flexWrap="wrap" width="300px">
+        <Box display='flex' mt='10px' gap='5px' flexWrap='wrap' width='300px'>
           {selectedTags.map((tag) => (
             <Tag
               key={tag}
-              size="lg"
-              borderRadius="none"
+              size='lg'
+              borderRadius='none'
               border={`3px solid ${theme.colors.secondary}`}
             >
               <TagLabel>{tag}</TagLabel>

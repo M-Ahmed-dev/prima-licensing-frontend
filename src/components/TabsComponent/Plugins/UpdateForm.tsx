@@ -36,18 +36,18 @@ const UpdateForm: React.FC<Props> = ({ handleUpdateClick }) => {
             border: `2px solid ${theme.colors.secondary}`,
           }}
         ></Box>
-        <Box mt="21px">
+        <Box mt='21px'>
           <ToggleSwitch />
         </Box>
 
         <Box>
-          <Text mt="17px" sx={theme.fonts.subHeading}>
+          <Text mt='17px' sx={theme.fonts.subHeading}>
             Version History
           </Text>
 
           {showVersion ? (
             <Box
-              mt="16px"
+              mt='16px'
               sx={{
                 border: `3px solid ${theme.colors.secondary}`,
                 padding: "11px 14px",
@@ -57,14 +57,14 @@ const UpdateForm: React.FC<Props> = ({ handleUpdateClick }) => {
                 <Text sx={theme.fonts.tealParagraph}>Version</Text>
                 <Text sx={theme.fonts.tealParagraph}>2.2.5</Text>
               </Box>
-              <Box mt="10px">
+              <Box mt='10px'>
                 <Text sx={theme.fonts.tealParagraph}>Add details</Text>
                 <UnorderedList>
                   <ListItem>updated language</ListItem>
                 </UnorderedList>
               </Box>
 
-              <Box display="flex" gap="10px" mt="13px">
+              <Box display='flex' gap='10px' mt='13px'>
                 <Button sx={theme.buttons.addZip}>Add Zip</Button>
                 <Button
                   sx={theme.buttons.discardSm}
@@ -79,12 +79,12 @@ const UpdateForm: React.FC<Props> = ({ handleUpdateClick }) => {
             <>
               <Box
                 onClick={handleClickVersion}
-                cursor="pointer"
-                mt="8px"
-                display="flex"
-                gap="9px"
+                cursor='pointer'
+                mt='8px'
+                display='flex'
+                gap='9px'
               >
-                <img src={Add} alt="add version" />
+                <img src={Add} alt='add version' />
                 <Text sx={theme.fonts.paragraph}>Add version</Text>
               </Box>
             </>
@@ -92,7 +92,7 @@ const UpdateForm: React.FC<Props> = ({ handleUpdateClick }) => {
         </Box>
 
         <Box
-          mt="16px"
+          mt='16px'
           sx={{
             border: `3px solid ${theme.colors.secondary}`,
             padding: "11px 14px",
@@ -104,13 +104,13 @@ const UpdateForm: React.FC<Props> = ({ handleUpdateClick }) => {
             <ListItem>updated language</ListItem>
             <ListItem>changed label</ListItem>
           </UnorderedList>
-          <Box display="flex" gap="10px" mt="16px">
+          <Box display='flex' gap='10px' mt='16px'>
             <Button sx={theme.buttons.secondarySmall}>Edit File</Button>
             <Button sx={theme.buttons.primarySmall}>Download</Button>
           </Box>
         </Box>
         <Box
-          mt="16px"
+          mt='16px'
           sx={{
             border: `3px solid ${theme.colors.secondary}`,
             padding: "11px 14px",
@@ -121,44 +121,44 @@ const UpdateForm: React.FC<Props> = ({ handleUpdateClick }) => {
           <UnorderedList>
             <ListItem>updated language</ListItem>
           </UnorderedList>
-          <Box display="flex" gap="10px" mt="16px">
+          <Box display='flex' gap='10px' mt='16px'>
             <Button sx={theme.buttons.secondarySmall}>Edit File</Button>
-            <Button sx={theme.buttons.primarySmall}>Download</Button>
+            <Button sx={theme.buttons.primarySmall}>Downloadz</Button>
           </Box>
         </Box>
 
-        <Box mt="11px">
+        <Box mt='11px'>
           <Link sx={theme.fonts.tealParagraph}>Show more</Link>
         </Box>
 
         <FormControl>
-          <Box mt="16px">
+          <Box mt='16px'>
             <FormLabel sx={theme.fonts.subHeading}>Slug</FormLabel>
             <Input
-              variant="flushed"
-              placeholder="x.x.x"
+              variant='flushed'
+              placeholder='x.x.x'
               color={theme.colors.secondary}
-              fontWeight="500"
-              borderBottom="3px solid"
+              fontWeight='500'
+              borderBottom='3px solid'
             />
           </Box>
-          <Box mt="16px">
+          <Box mt='16px'>
             <FormLabel sx={theme.fonts.subHeading}>Attached ZIP</FormLabel>-
           </Box>
         </FormControl>
 
-        <Box mt="30px">
-          <Button sx={theme.buttons.secondary} height="none">
+        <Box mt='30px'>
+          <Button sx={theme.buttons.secondary} height='none'>
             Browse Files
           </Button>
-          <Button mt="11px" sx={theme.buttons.primary} height="none">
+          <Button mt='11px' sx={theme.buttons.primary} height='none'>
             Update
           </Button>
           <Button
             onClick={handleUpdateClick}
-            mt="11px"
+            mt='11px'
             sx={theme.buttons.delete}
-            height="none"
+            height='none'
           >
             Discard
           </Button>

@@ -54,9 +54,9 @@ const DataTableBody: React.FC = () => {
                 <Checkbox
                   isChecked={item.isChecked}
                   onChange={() => handleCheckboxChange(item.sr)}
-                  variant="outlined"
+                  variant='outlined'
                   sx={checkBoxStyle}
-                  size="lg"
+                  size='lg'
                 >
                   {item.domainWebsite}
                 </Checkbox>
@@ -78,7 +78,7 @@ const DataTableBody: React.FC = () => {
               <Td>{item.status}</Td>
               <Td>{item.soldFree}</Td>
             </Tr>
-            <Box padding="5px"></Box>
+            <Box padding='5px'></Box>
           </>
         ))}
       </Tbody>

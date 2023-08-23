@@ -7,9 +7,9 @@ const SettingsHeading: React.FC = () => {
   return (
     <>
       <Text
-        as="h1"
-        fontWeight="700"
-        fontSize="20px"
+        as='h1'
+        fontWeight='700'
+        fontSize='20px'
         color={theme.colors.secondary}
       >
         Reminder email templates for Priima Integration

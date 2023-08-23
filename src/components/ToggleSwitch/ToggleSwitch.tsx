@@ -30,24 +30,24 @@ const ActiveToggleSwitch: React.FC = () => {
   };
   return (
     <>
-      <Box mt="20px">
-        <FormControl display="flex" gap="18px" alignItems="center">
+      <Box mt='20px'>
+        <FormControl display='flex' gap='18px' alignItems='center'>
           <Switch
-            cursor="pointer"
-            size="lg"
-            colorScheme="orange"
+            cursor='pointer'
+            size='lg'
+            colorScheme='orange'
             isChecked={isSwitchOn}
             onChange={handleSwitchChange}
             sx={SwitchStyles}
             defaultChecked
           />
           <FormLabel
-            cursor="pointer"
-            mb="0"
+            cursor='pointer'
+            mb='0'
             // color={theme.colors.secondary}
-            fontWeight="700"
-            textTransform="uppercase"
-            fontSize="18px"
+            fontWeight='700'
+            textTransform='uppercase'
+            fontSize='18px'
           >
             Active
           </FormLabel>
