@@ -1,7 +1,7 @@
-import { Box, Table, useTheme } from "@chakra-ui/react";
-import React, { useState } from "react";
-import DropdownBody from "./DropDownBody";
-import DropdownHeader from "./DropDownHeader";
+import { Box, Table, useTheme } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import DropdownBody from './DropDownBody';
+import DropdownHeader from './DropDownHeader';
 
 interface DropDownSelectorProps {
   data: string[];
@@ -26,15 +26,15 @@ const DropDownSelector: React.FC<DropDownSelectorProps> = ({
   return (
     <Box
       sx={{
-        display: "flex",
-        flexDirection: "column",
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
       <Table
         sx={{
           border: `3px solid ${theme.colors.secondary}`,
-          width: "298px",
-          position: "relative",
+          width: '298px',
+          position: 'relative',
         }}
       >
         <DropdownHeader
@@ -46,7 +46,7 @@ const DropDownSelector: React.FC<DropDownSelectorProps> = ({
       </Table>
 
       <Box>
-        {selectedValue && (
+        {selectedValue.length > 0 && (
           <Box marginTop='10px' padding='7px 10px'>
             {selectedValue}
           </Box>

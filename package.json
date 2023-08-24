@@ -11,30 +11,19 @@
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
     "@tanstack/react-query": "^4.33.0",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.0.1",
-    "@testing-library/user-event": "^14.1.0",
-    "@types/jest": "^28.1.1",
-    "@types/node": "^20.5.3",
     "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
     "framer-motion": "^10.16.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.10.1",
-    "react-router-dom": "^6.14.2",
-    "react-scripts": "5.0.1",
-    "typescript": "^5.1.6",
-    "web-vitals": "^3.4.0"
+    "react-router-dom": "^6.14.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -50,22 +39,37 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "@typescript-eslint/parser": "^6.1.0",
-    "eslint": "^8.45.0",
-    "eslint-plugin-react": "^7.32.2",
+    "@testing-library/jest-dom": "^6.1.1",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.4",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "@vitejs/plugin-react": "^4.0.4",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "husky": "^8.0.3",
-    "prettier": "^3.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "lint-staged": ">=10",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vite-plugin-svgr": "^3.2.0",
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,css,ts,tsx,jsx}": [
       "prettier --write",
-      "git add"
+      "eslint --fix"
     ]
   }
 }

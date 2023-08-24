@@ -1,59 +1,84 @@
-import React, { useState } from "react";
-import { Box, Button, useTheme, Text, Input } from "@chakra-ui/react";
+import React, { useEffect, useReducer, useState } from 'react';
+import { Box, Button, useTheme, Text, Input } from '@chakra-ui/react';
+import FileUpload from '../../FileUpload';
 
-const AddNewVersion = () => {
+const AddNewVersion = ({ version, isEdit }: any) => {
   const theme = useTheme();
+  const [showVersionForm, setShowVersionForm] = useState(false);
+  const [versionPayload, setVersionPayload] = useReducer(
+    (state: any, newState: Partial<any>) => ({
+      ...state,
+      ...newState,
+    }),
+    {
+      version: '',
+      version_description: '',
+      file: File,
+    }
+  );
 
-  const [showVersion, setShowVersion] = useState(false);
+  useEffect(() => {
+    if (isEdit) setVersionPayload({ ...version });
+  }, [version]);
 
   const handleClickVersion = () => {
-    setShowVersion((showVersion) => !showVersion);
+    setShowVersionForm((showVersionForm) => !showVersionForm);
   };
 
   return (
     <>
       <Box>
-        {showVersion ? (
+        {showVersionForm ? (
           <Box
-            mt='16px'
+            mt="16px"
             sx={{
               border: `3px solid ${theme.colors.secondary}`,
-              padding: "11px 20px",
+              padding: '11px 20px',
             }}
           >
             <Box>
-              <Text fontWeight='700' sx={theme.fonts.tealParagraph}>
+              <Text fontWeight="700" sx={theme.fonts.tealParagraph}>
                 Version
               </Text>
               <Input
+                name="version"
+                value={versionPayload.version}
+                onChange={(e) => setVersionPayload({ version: e.target.value })}
                 sx={{
-                  borderBottom: "3px solid #39808B",
+                  borderBottom: '3px solid #39808B',
                 }}
-                variant='flushed'
-                placeholder='add version'
+                variant="flushed"
+                placeholder="add version"
               />
             </Box>
 
-            <Box mt='10px'>
-              <Text fontWeight='700' sx={theme.fonts.tealParagraph}>
+            <Box mt="10px">
+              <Text fontWeight="700" sx={theme.fonts.tealParagraph}>
                 Description
               </Text>
               <Input
                 sx={{
-                  borderBottom: "3px solid #39808B",
+                  borderBottom: '3px solid #39808B',
                 }}
-                variant='flushed'
-                placeholder='add description'
+                name="version_description"
+                value={versionPayload.version_description}
+                onChange={(e) =>
+                  setVersionPayload({ version_description: e.target.value })
+                }
+                variant="flushed"
+                placeholder="add description"
               />
             </Box>
 
-            <Box display='flex' gap='10px' mt='13px'>
-              <Button
-                border={`3px solid ${theme.colors.secondary}`}
-                sx={theme.buttons.addZip}
-              >
-                Browse File
-              </Button>
+            <Box display="flex" gap="10px" mt="13px">
+              <FileUpload >
+                <Button
+                  border={`3px solid ${theme.colors.secondary}`}
+                  sx={theme.buttons.addZip}
+                >
+                  Browse File
+                </Button>
+              </FileUpload>
               <Button sx={theme.buttons.discardSm} onClick={handleClickVersion}>
                 Discard
               </Button>
@@ -61,38 +86,38 @@ const AddNewVersion = () => {
             </Box>
           </Box>
         ) : (
-          <Box width='214px'>
+          <Box width="214px">
             <Button
               onClick={handleClickVersion}
-              cursor='pointer'
-              mt='20px'
-              display='flex'
-              height='43px'
-              fontWeight='700'
-              gap='10px'
-              alignItems='center'
-              fontSize='20px'
+              cursor="pointer"
+              mt="20px"
+              display="flex"
+              height="43px"
+              fontWeight="700"
+              gap="10px"
+              alignItems="center"
+              fontSize="20px"
               sx={theme.buttons.primarySmall}
             >
               <div>
                 <svg
-                  width='16'
-                  height='16'
-                  viewBox='0 0 16 16'
-                  fill='#FEFEFE'
-                  xmlns='http://www.w3.org/2000/svg'
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="#FEFEFE"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d='M8 2L8 14'
-                    stroke='#FEFEFE'
-                    strokeWidth='3'
-                    strokeLinecap='round'
+                    d="M8 2L8 14"
+                    stroke="#FEFEFE"
+                    strokeWidth="3"
+                    strokeLinecap="round"
                   />
                   <path
-                    d='M2 8L14 8'
-                    stroke='#FEFEFE'
-                    strokeWidth='3'
-                    strokeLinecap='round'
+                    d="M2 8L14 8"
+                    stroke="#FEFEFE"
+                    strokeWidth="3"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>
