@@ -1,13 +1,14 @@
 import {
+  Box,
   Tab,
   TabList,
-  useTheme,
   TabPanel,
   TabPanels,
   Tabs,
-  Box,
+  useTheme,
 } from "@chakra-ui/react";
 import React from "react";
+
 import SettingsOptions from "./SettingOptions";
 import SettingsForm from "./SettingsForm";
 import SettingsHeading from "./SettingsHeading";

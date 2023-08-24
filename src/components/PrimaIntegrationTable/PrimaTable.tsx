@@ -1,6 +1,6 @@
-import React from "react";
-import SearchBar from "../SearchBar/SearchBar";
-import DataTable from "./DataTable";
+import React from 'react';
+import DataTable from './DataTable';
+import SearchBar from '../SearchBar/SearchBar';
 
 const PrimaTable: React.FC = () => {
   return (
